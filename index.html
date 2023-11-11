@@ -1,2906 +1,1 @@
-<html class="v2" dir="ltr" lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script type="text/javascript">
-      //
-      < ![CDATA[var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-          var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-
-          function DisableExitTraffic() {
-            PreventExitSplash = true;
-          }
-
-          function addLoadEvent(func) {
-            var oldonload = window.onload;
-            if (typeof window.onload != 'function') {
-              window.onload = func;
-            } else {
-              window.onload = function() {
-                if (oldonload) {
-                  oldonload();
-                }
-                func();
-              }
-            }
-          }
-
-          function addClickEvent(a, i, func) {
-            if (typeof a[i].onclick != 'function') {
-              a[i].onclick = func;
-            }
-          }
-          theBody = document.body;
-          if (!theBody) {
-            theBody = document.getElementById("body");
-            if (!theBody) {
-              theBody = document.getElementsByTagName("body")[0];
-            }
-          }
-          var PreventExitSplash = false;
-          var LightwindowOpening = false;
-
-          function DisplayExitSplash() {
-            if (PreventExitSplash == false) {
-              window.scrollTo(0, 0);
-              if (is_firefox) {
-                //window.alert(exittraffic_splashalertmessage);
-              }
-              PreventExitSplash = true;
-              if (is_chrome || is_firefox) {
-                timeout_variable = setTimeout("exittraffic_change_url();", 1000);
-              } else {
-                document.location.href = exittraffic_RedirectUrl;
-              }
-              return exittraffic_splashalertmessage;
-            }
-          }
-          var a = document.getElementsByTagName('A');
-          for (var i = 0; i < a.length; i++) {
-            if (a[i].target !== '_blank') {
-              addClickEvent(a, i, function() {
-                PreventExitSplash = true;
-              });
-            } else {
-              addClickEvent(a, i, function() {
-                PreventExitSplash = false;
-              });
-            }
-          }
-          disablelinksfunc = function() {
-            var a = document.getElementsByTagName('A');
-            for (var i = 0; i < a.length; i++) {
-              if (a[i].target !== '_blank') {
-                addClickEvent(a, i, function() {
-                  PreventExitSplash = true;
-                });
-              } else {
-                addClickEvent(a, i, function() {
-                  PreventExitSplash = false;
-                });
-              }
-            }
-          }
-          addLoadEvent(disablelinksfunc); disableformsfunc = function() {
-            // Makes that clicking on the links on the page will not cause this popup to appear
-            var f = document.getElementsByTagName('form');
-            for (var i = 0; i < f.length; i++) {
-              if (!f[i].onclick) {
-                f[i].onclick = function() {
-                  if (LightwindowOpening == false) {
-                    PreventExitSplash = true;
-                  }
-                }
-              } else if (!f[i].onsubmit) {
-                f[i].onsubmit = function() {
-                  PreventExitSplash = true;
-                }
-              }
-            }
-          }
-
-          function exittraffic_change_url() {
-            disable_confirmation = false;
-            clearTimeout(timeout_variable); // just to make sure
-            document.location.href = exittraffic_RedirectUrl;
-          }
-          addLoadEvent(disableformsfunc); window.onbeforeunload = DisplayExitSplash;
-          //]]>
-    </script>
-    <script>
-      if (confirm("Heluku cho hỏi xíu đee") == true) {
-        let cc = prompt("Mạnh có đeptrai khong?", "hoặc hỏi gì đó khác cũng được mình sẽ trả lời hếtt =))");
-        switch (cc) {
-          case "Có":
-            alert("Hjhj iuu cậu nhìuuu 😘😍");
-            break;
-          case "có":
-            alert("Hjhj iuu cậu nhìuuu 😘😍");
-            break;
-          case "Không":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "không":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Hoq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Hoqq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Hoqqq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "hoq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "hoqq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "hoqqq":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "k":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "K":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Đéo":
-            alert("Ơ kìa khong bậy nhaa");
-            break;
-          case "đéo":
-            alert("Ơ kìa khong bậy nhaa");
-            break;
-          case "Đeo":
-            alert("Ơ kìa khong bậy nhaa");
-            break;
-          case "đeo":
-            alert("Ơ kìa khong bậy nhaa");
-            break;
-          case "cc":
-            alert("Nào nào bậy gòi");
-            break;
-          case "Cc":
-            alert("Nào nào bậy gòi");
-            break;
-          case "Co":
-            alert("Hjhj iuu cậu nhìuuu 😘😍");
-            break;
-          case "co":
-            alert("Hjhj iuu cậu nhìuuu 😘😍");
-            break;
-          case "Ko":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "ko":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Khong":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "khong":
-            alert("Ỏ, bạn thẳng thắn lắm đó =)))");
-            break;
-          case "Loz":
-            alert("Đm láo vừa nha mài");
-            break;
-          case "loz":
-            alert("Đm láo vừa nha mài");
-            break;
-          case "Dm":
-            alert("Đm láo vừa nha mài");
-            break;
-          case "ny":
-            alert("ế :((");
-            break;
-          case "Ny":
-            alert("ế :((");
-            break;
-          case "Dmm":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "dm":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "dmm":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "Đm mạnh":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "Dm mạnh":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "Đm Mạnh":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "Đmm":
-            alert("Concec😡 mèi chửi ai mèy 🤬");
-            break;
-          case "Mạnh ăn cứt":
-            alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");
-            break;
-          case "Manh an cut":
-            alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");
-            break;
-          case "mạnh ăn cứt":
-            alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");
-            break;
-          case "manh an cut":
-            alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");
-            break;
-          case "Mạnh ăn loz":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "mạnh ăn loz":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Manh an loz":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "manh an loz":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Mạnh ăn lồn":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "mạnh ăn lồn":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Manh an lon":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "manh an lon":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Mạnh ăn lol":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "mạnh ăn lol":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Manh an lol":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "manh an lol":
-            alert("Cái này thì chưa được ăn nha 😶");
-            break;
-          case "Mạnh ngu":
-            alert("Mày ngu hơn");
-            break;
-          case "mạnh ngu":
-            alert("Mày ngu hơn");
-            break;
-          case "Manh ngu":
-            alert("Mày ngu hơn");
-            break;
-          case "manh ngu":
-            alert("Mày ngu hơn");
-            break;
-          case "Mạnh ngu":
-            alert("Mày ngu hơn");
-            break;
-          case "Chó mạnh":
-            alert("Nổ mẹ địa chỉ đê chửi cc 😤");
-            break;
-          case "Chó Mạnh":
-            alert("Nổ mẹ địa chỉ đê chửi cc 😤");
-            break;
-          case "chó mạnh":
-            alert("Nổ mẹ địa chỉ đê chửi cc 😤");
-            break;
-          case "Cho manh":
-            alert("Nổ mẹ địa chỉ đê chửi cc 😤");
-            break;
-          case "cho manh":
-            alert("Nổ mẹ địa chỉ đê chửi cc 😤");
-            break;
-          case "Em yêu anh":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          case "em yêu anh":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          case "Em yeu anh":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          case "em yeu anh":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          case "I love you":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          case "i love you":
-            alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");
-            break;
-          default:
-            alert("Có vẻ đây không phải là một câu trả lời, hệ thống sẽ cập nhật ý kiến này của bạn sau!");
-        }
-      } else {
-        alert("Không trả lời thì thuii, ấn ok để xem trang nhé!");
-      }
-    </script>
-    <title>In4 - TiuMẹn</title>
-    <!--Tile của web-->
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-    <link href="https://i.imgur.com/AfQhvpG.jpeg" rel="shortcut icon" type="image/x-icon">
-    <!-- icon web (bìa: #cover + #bg-cover, bg web: #bg)-->
-    <meta content="https://i.imgur.com/mdhpwnm.jpeg" property="og:image">
-    <meta content="https://www.tieuducmanh.xyz/" property="og:url">
-    <!-- link web-->
-    <meta content="website" property="og:type">
-    <meta content="ManhDepTry" property="og:title">
-    <meta content="Xây dựng và phát triển bởi ManhĐepTry !" property="og:description">
-    <link href="https://cdn.leanhduc.pro.vn/font-awesome/pro-5.15.3/css/all.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.css" rel="stylesheet">
-    <!-- Bắt đầu css-->
-    <style id="page-skin-1" type="text/css">
-      <!--
-      /* Chèn CSS vào đây */
-      /*------------------------------------------------*/
-      /* Name: Template giới thiệu bản thân version 8.1 */
-      /* Admin: ManhDepTry                              */
-      /* Phone: 0366520607                            */
-      /* Gmail: manhzack@gmail.com                   */
-      /*------------------------------------------------*/
-      @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-      @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Pattaya|Srisakdi&display=swap");
-
-      html,
-      body {
-        cursor: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mouse-f1.png"), auto
-      }
-
-      a:hover {
-        cursor: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mouse-f2.png"), auto
-      }
-
-      .loader {
-        background: #4568dc;
-        background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
-        background: linear-gradient(to right, #b06ab3, #4568dc);
-        opacity: 0.6;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 99999
-      }
-
-      .loader-inner {
-        bottom: 0;
-        height: 60px;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100px
-      }
-
-      .loader-line-wrap {
-        animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-        box-sizing: border-box;
-        height: 50px;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        transform-origin: 50% 100%;
-        width: 100px
-      }
-
-      .loader-line {
-        border: 4px solid transparent;
-        border-radius: 100%;
-        box-sizing: border-box;
-        height: 100px;
-        left: 0;
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100px
-      }
-
-      .loader-line-wrap:nth-child(1) {
-        animation-delay: -50ms
-      }
-
-      .loader-line-wrap:nth-child(2) {
-        animation-delay: -100ms
-      }
-
-      .loader-line-wrap:nth-child(3) {
-        animation-delay: -150ms
-      }
-
-      .loader-line-wrap:nth-child(4) {
-        animation-delay: -200ms
-      }
-
-      .loader-line-wrap:nth-child(5) {
-        animation-delay: -250ms
-      }
-
-      .loader-line-wrap:nth-child(1) .loader-line {
-        border-color: hsl(0, 80%, 60%);
-        height: 90px;
-        width: 90px;
-        top: 7px
-      }
-
-      .loader-line-wrap:nth-child(2) .loader-line {
-        border-color: hsl(60, 80%, 60%);
-        height: 76px;
-        width: 76px;
-        top: 14px
-      }
-
-      .loader-line-wrap:nth-child(3) .loader-line {
-        border-color: hsl(120, 80%, 60%);
-        height: 62px;
-        width: 62px;
-        top: 21px
-      }
-
-      .loader-line-wrap:nth-child(4) .loader-line {
-        border-color: hsl(180, 80%, 60%);
-        height: 48px;
-        width: 48px;
-        top: 28px
-      }
-
-      .loader-line-wrap:nth-child(5) .loader-line {
-        border-color: hsl(240, 80%, 60%);
-        height: 34px;
-        width: 34px;
-        top: 35px
-      }
-
-      @keyframes spin {
-
-        0%,
-        15% {
-          transform: rotate(0)
-        }
-
-        100% {
-          transform: rotate(360deg)
-        }
-      }
-
-      * {
-        font-family: "Roboto";
-        padding: 0;
-        margin: 0
-      }
-
-      .border {
-        position: relative;
-        width: 50%;
-        height: 2px;
-        background-color: rgb(138, 138, 138)
-      }
-
-      #boxs {
-        margin-top: 3px
-      }
-
-      #bg {
-        position: fixed;
-        min-height: 100vh;
-        min-width: 100%;
-        background-image: url("https://cdnb.artstation.com/p/assets/images/images/048/955/035/original/ryan-haight-highland-park-large.gif");
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        left: 0
-      }
-
-      #window {
-        position: absolute;
-        min-height: 100%;
-        min-width: 100%;
-        background-color: #000000;
-        padding: 0;
-        top: 0;
-        left: 0
-      }
-
-      #main {
-        z-index: 2;
-        position: relative;
-        width: 450px;
-        padding-bottom: 5px;
-        background-color: #ffffffa4;
-        border-radius: 25px;
-        margin-top: 5px;
-        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74)
-      }
-
-      #cover {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        background-image: url("https://cdna.artstation.com/p/assets/images/images/060/746/018/original/feon-pixel-art-background-3.gif");
-        background-position: center;
-        background-size: cover;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        padding-top: 30px;
-        padding-bottom: 30px
-      }
-
-      #bg-cover {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-image: url("https://cdna.artstation.com/p/assets/images/images/060/746/018/original/feon-pixel-art-background-3.gif");
-        background-position: center;
-        background-size: cover;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        filter: opacity(0.6)
-      }
-
-      #avatar {
-        position: relative;
-        background-position: center;
-        background-size: cover;
-        border-radius: 100%;
-        border: 5px solid #1877f2;
-        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74)
-      }
-
-      #avatar img {
-        height: 111px;
-        width: 111px;
-        border-radius: 50%;
-        object-fit: cover;
-        position: relative;
-        border: 2px solid #fff
-      }
-
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 0
-      }
-
-      #name {
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-family: "Lobster"
-      }
-
-      #name i {
-        color: #1877f2;
-        font-size: 25px
-      }
-
-      #bio {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-family: "sansserif";
-        font-size: 13px
-      }
-
-      #contact-text:hover {
-        transform: scale(1.2);
-        padding: 2px 55px
-      }
-
-      .box {
-        height: 50px;
-        width: 75%;
-        margin: 5px auto;
-        border-radius: 20px;
-        background: rgb(42, 100, 173);
-        background: -moz-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
-        background: -webkit-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
-        background: linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a64ad", endColorstr="#2d88ff", GradientType=1);
-        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74);
-        z-index: 1;
-        transition: all 250ms
-      }
-
-      .box:hover {
-        padding-right: 20px
-      }
-
-      .icon {
-        display: inline;
-        position: relative;
-        height: 50px;
-        width: 50px
-      }
-
-      .icon i {
-        font-size: 30px;
-        margin: 10px 20px;
-        color: #ffffff;
-        transition: transform 250ms;
-        z-index: 2
-      }
-
-      .icon i:hover {
-        transform: rotate(360deg)
-      }
-
-      .detail {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        font-size: 20px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 10px;
-        transition: all 500ms;
-        font-family: "cursive"
-      }
-
-      .col-10 {
-        position: relative;
-        max-height: 100%
-      }
-
-      .col-10:hover .detail {
-        filter: opacity(0);
-        z-index: -5
-      }
-
-      .col-10:hover .linked {
-        filter: opacity(1);
-        z-index: 5
-      }
-
-      .col-10:active .detail {
-        filter: opacity(0);
-        z-index: -5
-      }
-
-      .col-10:active .linked {
-        filter: opacity(1);
-        z-index: 5
-      }
-
-      .fas {
-        transition: all 250ms
-      }
-
-      .col-10:hover .fas {
-        transform: rotate(360deg)
-      }
-
-      .linked {
-        position: relative;
-        margin: 0 auto;
-        font-size: 20px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 10px;
-        transition: all 500ms;
-        top: -40px;
-        z-index: -2;
-        filter: opacity(0);
-        transition: all 1000ms;
-        font-family: "Roboto"
-      }
-
-      .div-logo {
-        position: relative;
-        height: 30px;
-        width: 30px;
-        background-position: center;
-        background-size: cover;
-        margin: 10px 20px;
-        z-index: 5;
-        transition: all 250ms
-      }
-
-      .div-logo:hover {
-        transform: rotate(360deg)
-      }
-
-      @media only screen and (max-width:540px) {
-        #main {
-          width: 100vw;
-          margin-top: 0vw;
-          margin-bottom: 0;
-          border-radius: 0
-        }
-
-        #bg-cover {
-          border-radius: 0
-        }
-
-        #window {
-          min-height: 100%;
-          min-width: 100%
-        }
-
-        .linked {
-          font-size: 19px
-        }
-      }
-
-      .facebook {
-        background: #3a5795;
-        color: #1c3977;
-        background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a5795), color-stop(100%, #2b4886));
-        background: -webkit-linear-gradient(top, #3a5795 0%, #2b4886 100%);
-        background: -moz-linear-gradient(top, #3a5795 0%, #2b4886 100%);
-        background: -o-linear-gradient(top, #3a5795 0%, #2b4886 100%);
-        background: -ms-linear-gradient(top, #3a5795 0%, #2b4886 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A5795', endColorstr='#2B4886', GradientType=0);
-        border: 1px solid #1c3977;
-        text-shadow: 0 1px 0 #4966a4;
-        -webkit-text-shadow: 0 1px 0 #4966a4;
-        -moz-text-shadow: 0 1px 0 #4966a4;
-        box-shadow: inset 0 1px 0 #4966a4;
-        -webkit-box-shadow: inset 0 1px 0 #4966a4;
-        -moz-box-shadow: inset 0 1px 0 #4966a4
-      }
-
-      .messenger {
-        background: #fc466b;
-        background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);
-        background: linear-gradient(to right, #3f5efb, #fc466b)
-      }
-
-      .tiktok {
-        background: #010101;
-        background: -webkit-linear-gradient(to right, #010101, #6c0016);
-        background: linear-gradient(to right, #010101, #6c0016)
-      }
-
-      .zalo {
-        background: #0064f7;
-        background: linear-gradient(127deg, #0064f7 0%, #2a7fff 100%)
-      }
-
-      .zalo-icon {
-        background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/zalo.png")
-      }
-
-      .phone {
-        background: #1f1c2c;
-        background: -webkit-linear-gradient(to right, #1f1c2c, #928dab);
-        background: linear-gradient(to right, #1f1c2c, #928dab)
-      }
-
-      .momo {
-        background: #a80069;
-        background: linear-gradient(127deg, #a80069 0%, #d73193 100%)
-      }
-
-      .momo-icon {
-        background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/momo.png")
-      }
-
-      .vietcombank {
-        background: #023327;
-        background: linear-gradient(127deg, #023327 0%, #3A9F85 100%)
-      }
-
-      .vietcombank-icon {
-        background-image: url("https://i.imgur.io/aC4OjYn_d.webp")
-      }
-
-      .telegram {
-        background: #0861AB;
-        background: linear-gradient(127deg, #14A8E8 0%, #0684BA 100%)
-      }
-
-      .telegram-icon {
-        background-image: url("https://cdn-icons-png.flaticon.com/512/906/906377.png")
-      }
-
-      .mbbank {
-        background: #1f00cf;
-        background: linear-gradient(127deg, #1f00cf 0%, #006db5 100%)
-      }
-
-      .mbbank-icon {
-        background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mbbank.png")
-      }
-
-      .badge {
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #E62488;
-        padding: 0.5px 3px;
-        border-radius: 3px;
-        font-size: 10px
-      }
-
-      a {
-        text-decoration: none !important;
-        color: rgb(42, 100, 173) !important
-      }
-
-      .snowflake {
-        color: white;
-      }
-
-      @-webkit-keyframes snowflakes-fall {
-        0% {
-          top: -10%;
-        }
-
-        100% {
-          top: 100%;
-        }
-      }
-
-      @-webkit-keyframes snowflakes-shake {
-        0% {
-          -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-        }
-
-        50% {
-          -webkit-transform: translateX(80px);
-          transform: translateX(80px);
-        }
-
-        100% {
-          -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-        }
-      }
-
-      @keyframes snowflakes-fall {
-        0% {
-          top: -10%;
-        }
-
-        100% {
-          top: 100%;
-        }
-      }
-
-      @keyframes snowflakes-shake {
-        0% {
-          transform: translateX(0px);
-        }
-
-        50% {
-          transform: translateX(80px);
-        }
-
-        100% {
-          transform: translateX(0px);
-        }
-      }
-
-      .snowflake {
-        position: fixed;
-        top: -10%;
-        z-index: 9999;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: default;
-        -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-        -webkit-animation-duration: 10s, 3s;
-        -webkit-animation-timing-function: linear, ease-in-out;
-        -webkit-animation-iteration-count: infinite, infinite;
-        -webkit-animation-play-state: running, running;
-        animation-name: snowflakes-fall, snowflakes-shake;
-        animation-duration: 10s, 3s;
-        animation-timing-function: linear, ease-in-out;
-        animation-iteration-count: infinite, infinite;
-        animation-play-state: running, running;
-      }
-
-      .snowflake:nth-of-type(0) {
-        left: 1%;
-        -webkit-animation-delay: 0s, 0s;
-        animation-delay: 0s, 0s;
-      }
-
-      .snowflake:nth-of-type(1) {
-        left: 10%;
-        -webkit-animation-delay: 1s, 1s;
-        animation-delay: 1s, 1s;
-      }
-
-      .snowflake:nth-of-type(2) {
-        left: 20%;
-        -webkit-animation-delay: 6s, 0.5s;
-        animation-delay: 6s, 0.5s;
-      }
-
-      .snowflake:nth-of-type(3) {
-        left: 30%;
-        -webkit-animation-delay: 4s, 2s;
-        animation-delay: 4s, 2s;
-      }
-
-      .snowflake:nth-of-type(4) {
-        left: 40%;
-        -webkit-animation-delay: 2s, 2s;
-        animation-delay: 2s, 2s;
-      }
-
-      .snowflake:nth-of-type(5) {
-        left: 50%;
-        -webkit-animation-delay: 8s, 3s;
-        animation-delay: 8s, 3s;
-      }
-
-      .snowflake:nth-of-type(6) {
-        left: 60%;
-        -webkit-animation-delay: 6s, 2s;
-        animation-delay: 6s, 2s;
-      }
-
-      .snowflake:nth-of-type(7) {
-        left: 70%;
-        -webkit-animation-delay: 2.5s, 1s;
-        animation-delay: 2.5s, 1s;
-      }
-
-      .snowflake:nth-of-type(8) {
-        left: 80%;
-        -webkit-animation-delay: 1s, 0s;
-        animation-delay: 1s, 0s;
-      }
-
-      .snowflake:nth-of-type(9) {
-        left: 90%;
-        -webkit-animation-delay: 3s, 1.5s;
-        animation-delay: 3s, 1.5s;
-      }
-
-      .snow-container {
-        position: fixed;
-        width: 100%;
-        max-width: 100%;
-        z-index: 99999;
-        pointer-events: none;
-        overflow: hidden;
-        top: 0;
-        height: 100%
-      }
-
-      .snow {
-        display: block;
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        pointer-events: none;
-        -webkit-transform: translate3d(0, -100%, 0);
-        transform: translate3d(0, -100%, 0);
-        -webkit-animation: snow linear infinite;
-        animation: snow linear infinite
-      }
-
-      .snow.foreground {
-        background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
-        -webkit-animation-duration: 15s;
-        animation-duration: 10s
-      }
-
-      .snow.foreground.layered {
-        -webkit-animation-delay: 7.5s;
-        animation-delay: 7.5s
-      }
-
-      .snow.middleground {
-        background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
-        -webkit-animation-duration: 20s;
-        animation-duration: 15s
-      }
-
-      .snow.middleground.layered {
-        -webkit-animation-delay: 10s;
-        animation-delay: 10s
-      }
-
-      .snow.background {
-        background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
-        -webkit-animation-duration: 25s;
-        animation-duration: 20s
-      }
-
-      .snow.background.layered {
-        -webkit-animation-delay: 12.5s;
-        animation-delay: 12.5s
-      }
-
-      @-webkit-keyframes snow {
-        0% {
-          -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0)
-        }
-
-        100% {
-          -webkit-transform: translate3d(5%, 100%, 0);
-          transform: translate3d(5%, 100%, 0)
-        }
-      }
-
-      @keyframes snow {
-        0% {
-          -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0)
-        }
-
-        100% {
-          -webkit-transform: translate3d(5%, 100%, 0);
-          transform: translate3d(5%, 100%, 0)
-        }
-      }
-
-      @-webkit-keyframes my {
-        0% {
-          color: #FF186D;
-        }
-
-        50% {
-          color: #FF186D;
-        }
-
-        100% {
-          color: FF186D;
-        }
-      }
-
-      @-moz-keyframes my {
-        0% {
-          color: #FF186D;
-        }
-
-        50% {
-          color: #FF186D;
-        }
-
-        100% {
-          color: #FF186D;
-        }
-      }
-
-      @-o-keyframes my {
-        0% {
-          color: #00FF84;
-        }
-
-        50% {
-          color: #00FF84;
-        }
-
-        100% {
-          color: #00FF84;
-        }
-      }
-
-      @keyframes my {
-        0% {
-          color: #FF186D;
-        }
-
-        50% {
-          color: #FF186D;
-        }
-
-        100% {
-          color: #00FF84;
-        }
-      }
-
-      .test {
-        background: #fffff;
-        font-size: 19px;
-        vertical-align: sub;
-        font-weight: bold;
-        -webkit-animation: my 1ms infinite;
-        -moz-animation: my 1ms infinite;
-        -o-animation: my 1ms infinite;
-        animation: my 30ms infinite;
-      }
-      -->
-    </style>
-    <style>
-      .swal2-popup.swal2-toast {
-        box-sizing: border-box;
-        grid-column: 1/4 !important;
-        grid-row: 1/4 !important;
-        grid-template-columns: min-content auto min-content;
-        padding: 1em;
-        overflow-y: hidden;
-        background: #fff;
-        box-shadow: 0 0 1px rgba(0, 0, 0, .075), 0 1px 2px rgba(0, 0, 0, .075), 1px 2px 4px rgba(0, 0, 0, .075), 1px 3px 8px rgba(0, 0, 0, .075), 2px 4px 16px rgba(0, 0, 0, .075);
-        pointer-events: all
-      }
-
-      .swal2-popup.swal2-toast>* {
-        grid-column: 2
-      }
-
-      .swal2-popup.swal2-toast .swal2-title {
-        margin: .5em 1em;
-        padding: 0;
-        font-size: 1em;
-        text-align: initial
-      }
-
-      .swal2-popup.swal2-toast .swal2-loading {
-        justify-content: center
-      }
-
-      .swal2-popup.swal2-toast .swal2-input {
-        height: 2em;
-        margin: .5em;
-        font-size: 1em
-      }
-
-      .swal2-popup.swal2-toast .swal2-validation-message {
-        font-size: 1em
-      }
-
-      .swal2-popup.swal2-toast .swal2-footer {
-        margin: .5em 0 0;
-        padding: .5em 0 0;
-        font-size: .8em
-      }
-
-      .swal2-popup.swal2-toast .swal2-close {
-        grid-column: 3/3;
-        grid-row: 1/99;
-        align-self: center;
-        width: .8em;
-        height: .8em;
-        margin: 0;
-        font-size: 2em
-      }
-
-      .swal2-popup.swal2-toast .swal2-html-container {
-        margin: .5em 1em;
-        padding: 0;
-        overflow: initial;
-        font-size: 1em;
-        text-align: initial
-      }
-
-      .swal2-popup.swal2-toast .swal2-html-container:empty {
-        padding: 0
-      }
-
-      .swal2-popup.swal2-toast .swal2-loader {
-        grid-column: 1;
-        grid-row: 1/99;
-        align-self: center;
-        width: 2em;
-        height: 2em;
-        margin: .25em
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon {
-        grid-column: 1;
-        grid-row: 1/99;
-        align-self: center;
-        width: 2em;
-        min-width: 2em;
-        height: 2em;
-        margin: 0 .5em 0 0
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
-        display: flex;
-        align-items: center;
-        font-size: 1.8em;
-        font-weight: bold
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
-        width: 2em;
-        height: 2em
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
-        top: .875em;
-        width: 1.375em
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
-        left: .3125em
-      }
-
-      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
-        right: .3125em
-      }
-
-      .swal2-popup.swal2-toast .swal2-actions {
-        justify-content: flex-start;
-        height: auto;
-        margin: 0;
-        margin-top: .5em;
-        padding: 0 .5em
-      }
-
-      .swal2-popup.swal2-toast .swal2-styled {
-        margin: .25em .5em;
-        padding: .4em .6em;
-        font-size: 1em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success {
-        border-color: #a5dc86
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {
-        position: absolute;
-        width: 1.6em;
-        height: 3em;
-        transform: rotate(45deg);
-        border-radius: 50%
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
-        top: -0.8em;
-        left: -0.5em;
-        transform: rotate(-45deg);
-        transform-origin: 2em 2em;
-        border-radius: 4em 0 0 4em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
-        top: -0.25em;
-        left: .9375em;
-        transform-origin: 0 1.5em;
-        border-radius: 0 4em 4em 0
-      }
-
-      .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
-        width: 2em;
-        height: 2em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
-        top: 0;
-        left: .4375em;
-        width: .4375em;
-        height: 2.6875em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {
-        height: .3125em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
-        top: 1.125em;
-        left: .1875em;
-        width: .75em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
-        top: .9375em;
-        right: .1875em;
-        width: 1.375em
-      }
-
-      .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
-        animation: swal2-toast-animate-success-line-tip .75s
-      }
-
-      .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
-        animation: swal2-toast-animate-success-line-long .75s
-      }
-
-      .swal2-popup.swal2-toast.swal2-show {
-        animation: swal2-toast-show .5s
-      }
-
-      .swal2-popup.swal2-toast.swal2-hide {
-        animation: swal2-toast-hide .1s forwards
-      }
-
-      div:where(.swal2-container) {
-        display: grid;
-        position: fixed;
-        z-index: 1060;
-        inset: 0;
-        box-sizing: border-box;
-        grid-template-areas: "top-start     top            top-end""center-start  center         center-end""bottom-start  bottom-center  bottom-end";
-        grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
-        height: 100%;
-        padding: .625em;
-        overflow-x: hidden;
-        transition: background-color .1s;
-        -webkit-overflow-scrolling: touch
-      }
-
-      div:where(.swal2-container).swal2-backdrop-show,
-      div:where(.swal2-container).swal2-noanimation {
-        background: rgba(0, 0, 0, .4)
-      }
-
-      div:where(.swal2-container).swal2-backdrop-hide {
-        background: rgba(0, 0, 0, 0) !important
-      }
-
-      div:where(.swal2-container).swal2-top-start,
-      div:where(.swal2-container).swal2-center-start,
-      div:where(.swal2-container).swal2-bottom-start {
-        grid-template-columns: minmax(0, 1fr) auto auto
-      }
-
-      div:where(.swal2-container).swal2-top,
-      div:where(.swal2-container).swal2-center,
-      div:where(.swal2-container).swal2-bottom {
-        grid-template-columns: auto minmax(0, 1fr) auto
-      }
-
-      div:where(.swal2-container).swal2-top-end,
-      div:where(.swal2-container).swal2-center-end,
-      div:where(.swal2-container).swal2-bottom-end {
-        grid-template-columns: auto auto minmax(0, 1fr)
-      }
-
-      div:where(.swal2-container).swal2-top-start>.swal2-popup {
-        align-self: start
-      }
-
-      div:where(.swal2-container).swal2-top>.swal2-popup {
-        grid-column: 2;
-        align-self: start;
-        justify-self: center
-      }
-
-      div:where(.swal2-container).swal2-top-end>.swal2-popup,
-      div:where(.swal2-container).swal2-top-right>.swal2-popup {
-        grid-column: 3;
-        align-self: start;
-        justify-self: end
-      }
-
-      div:where(.swal2-container).swal2-center-start>.swal2-popup,
-      div:where(.swal2-container).swal2-center-left>.swal2-popup {
-        grid-row: 2;
-        align-self: center
-      }
-
-      div:where(.swal2-container).swal2-center>.swal2-popup {
-        grid-column: 2;
-        grid-row: 2;
-        align-self: center;
-        justify-self: center
-      }
-
-      div:where(.swal2-container).swal2-center-end>.swal2-popup,
-      div:where(.swal2-container).swal2-center-right>.swal2-popup {
-        grid-column: 3;
-        grid-row: 2;
-        align-self: center;
-        justify-self: end
-      }
-
-      div:where(.swal2-container).swal2-bottom-start>.swal2-popup,
-      div:where(.swal2-container).swal2-bottom-left>.swal2-popup {
-        grid-column: 1;
-        grid-row: 3;
-        align-self: end
-      }
-
-      div:where(.swal2-container).swal2-bottom>.swal2-popup {
-        grid-column: 2;
-        grid-row: 3;
-        justify-self: center;
-        align-self: end
-      }
-
-      div:where(.swal2-container).swal2-bottom-end>.swal2-popup,
-      div:where(.swal2-container).swal2-bottom-right>.swal2-popup {
-        grid-column: 3;
-        grid-row: 3;
-        align-self: end;
-        justify-self: end
-      }
-
-      div:where(.swal2-container).swal2-grow-row>.swal2-popup,
-      div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {
-        grid-column: 1/4;
-        width: 100%
-      }
-
-      div:where(.swal2-container).swal2-grow-column>.swal2-popup,
-      div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {
-        grid-row: 1/4;
-        align-self: stretch
-      }
-
-      div:where(.swal2-container).swal2-no-transition {
-        transition: none !important
-      }
-
-      div:where(.swal2-container) div:where(.swal2-popup) {
-        display: none;
-        position: relative;
-        box-sizing: border-box;
-        grid-template-columns: minmax(0, 100%);
-        width: 32em;
-        max-width: 100%;
-        padding: 0 0 1.25em;
-        border: none;
-        border-radius: 5px;
-        background: #fff;
-        color: #545454;
-        font-family: inherit;
-        font-size: 1rem
-      }
-
-      div:where(.swal2-container) div:where(.swal2-popup):focus {
-        outline: none
-      }
-
-      div:where(.swal2-container) div:where(.swal2-popup).swal2-loading {
-        overflow-y: hidden
-      }
-
-      div:where(.swal2-container) h2:where(.swal2-title) {
-        position: relative;
-        max-width: 100%;
-        margin: 0;
-        padding: .8em 1em 0;
-        color: inherit;
-        font-size: 1.875em;
-        font-weight: 600;
-        text-align: center;
-        text-transform: none;
-        word-wrap: break-word
-      }
-
-      div:where(.swal2-container) div:where(.swal2-actions) {
-        display: flex;
-        z-index: 1;
-        box-sizing: border-box;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        margin: 1.25em auto 0;
-        padding: 0
-      }
-
-      div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled] {
-        opacity: .4
-      }
-
-      div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
-      }
-
-      div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
-      }
-
-      div:where(.swal2-container) div:where(.swal2-loader) {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        width: 2.2em;
-        height: 2.2em;
-        margin: 0 1.875em;
-        animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
-        border-width: .25em;
-        border-style: solid;
-        border-radius: 100%;
-        border-color: #2778c4 rgba(0, 0, 0, 0) #2778c4 rgba(0, 0, 0, 0)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled) {
-        margin: .3125em;
-        padding: .625em 1.1em;
-        transition: box-shadow .1s;
-        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
-        font-weight: 500
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {
-        cursor: pointer
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-        border: 0;
-        border-radius: .25em;
-        background: initial;
-        background-color: #7066e0;
-        color: #fff;
-        font-size: 1em
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
-        box-shadow: 0 0 0 3px rgba(112, 102, 224, .5)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-deny {
-        border: 0;
-        border-radius: .25em;
-        background: initial;
-        background-color: #dc3741;
-        color: #fff;
-        font-size: 1em
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus {
-        box-shadow: 0 0 0 3px rgba(220, 55, 65, .5)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
-        border: 0;
-        border-radius: .25em;
-        background: initial;
-        background-color: #6e7881;
-        color: #fff;
-        font-size: 1em
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {
-        box-shadow: 0 0 0 3px rgba(110, 120, 129, .5)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {
-        box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled):focus {
-        outline: none
-      }
-
-      div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner {
-        border: 0
-      }
-
-      div:where(.swal2-container) div:where(.swal2-footer) {
-        margin: 1em 0 0;
-        padding: 1em 1em 0;
-        border-top: 1px solid #eee;
-        color: inherit;
-        font-size: 1em;
-        text-align: center
-      }
-
-      div:where(.swal2-container) .swal2-timer-progress-bar-container {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        grid-column: auto !important;
-        overflow: hidden;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px
-      }
-
-      div:where(.swal2-container) div:where(.swal2-timer-progress-bar) {
-        width: 100%;
-        height: .25em;
-        background: rgba(0, 0, 0, .2)
-      }
-
-      div:where(.swal2-container) img:where(.swal2-image) {
-        max-width: 100%;
-        margin: 2em auto 1em
-      }
-
-      div:where(.swal2-container) button:where(.swal2-close) {
-        z-index: 2;
-        align-items: center;
-        justify-content: center;
-        width: 1.2em;
-        height: 1.2em;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: -1.2em;
-        padding: 0;
-        overflow: hidden;
-        transition: color .1s, box-shadow .1s;
-        border: none;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0);
-        color: #ccc;
-        font-family: monospace;
-        font-size: 2.5em;
-        cursor: pointer;
-        justify-self: end
-      }
-
-      div:where(.swal2-container) button:where(.swal2-close):hover {
-        transform: none;
-        background: rgba(0, 0, 0, 0);
-        color: #f27474
-      }
-
-      div:where(.swal2-container) button:where(.swal2-close):focus {
-        outline: none;
-        box-shadow: inset 0 0 0 3px rgba(100, 150, 200, .5)
-      }
-
-      div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {
-        border: 0
-      }
-
-      div:where(.swal2-container) .swal2-html-container {
-        z-index: 1;
-        justify-content: center;
-        margin: 1em 1.6em .3em;
-        padding: 0;
-        overflow: auto;
-        color: inherit;
-        font-size: 1.125em;
-        font-weight: normal;
-        line-height: normal;
-        text-align: center;
-        word-wrap: break-word;
-        word-break: break-word
-      }
-
-      div:where(.swal2-container) input:where(.swal2-input),
-      div:where(.swal2-container) input:where(.swal2-file),
-      div:where(.swal2-container) textarea:where(.swal2-textarea),
-      div:where(.swal2-container) select:where(.swal2-select),
-      div:where(.swal2-container) div:where(.swal2-radio),
-      div:where(.swal2-container) label:where(.swal2-checkbox) {
-        margin: 1em 2em 3px
-      }
-
-      div:where(.swal2-container) input:where(.swal2-input),
-      div:where(.swal2-container) input:where(.swal2-file),
-      div:where(.swal2-container) textarea:where(.swal2-textarea) {
-        box-sizing: border-box;
-        width: auto;
-        transition: border-color .1s, box-shadow .1s;
-        border: 1px solid #d9d9d9;
-        border-radius: .1875em;
-        background: rgba(0, 0, 0, 0);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(0, 0, 0, 0);
-        color: inherit;
-        font-size: 1.125em
-      }
-
-      div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,
-      div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,
-      div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {
-        border-color: #f27474 !important;
-        box-shadow: 0 0 2px #f27474 !important
-      }
-
-      div:where(.swal2-container) input:where(.swal2-input):focus,
-      div:where(.swal2-container) input:where(.swal2-file):focus,
-      div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
-        border: 1px solid #b4dbed;
-        outline: none;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(100, 150, 200, .5)
-      }
-
-      div:where(.swal2-container) input:where(.swal2-input)::placeholder,
-      div:where(.swal2-container) input:where(.swal2-file)::placeholder,
-      div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {
-        color: #ccc
-      }
-
-      div:where(.swal2-container) .swal2-range {
-        margin: 1em 2em 3px;
-        background: #fff
-      }
-
-      div:where(.swal2-container) .swal2-range input {
-        width: 80%
-      }
-
-      div:where(.swal2-container) .swal2-range output {
-        width: 20%;
-        color: inherit;
-        font-weight: 600;
-        text-align: center
-      }
-
-      div:where(.swal2-container) .swal2-range input,
-      div:where(.swal2-container) .swal2-range output {
-        height: 2.625em;
-        padding: 0;
-        font-size: 1.125em;
-        line-height: 2.625em
-      }
-
-      div:where(.swal2-container) .swal2-input {
-        height: 2.625em;
-        padding: 0 .75em
-      }
-
-      div:where(.swal2-container) .swal2-file {
-        width: 75%;
-        margin-right: auto;
-        margin-left: auto;
-        background: rgba(0, 0, 0, 0);
-        font-size: 1.125em
-      }
-
-      div:where(.swal2-container) .swal2-textarea {
-        height: 6.75em;
-        padding: .75em
-      }
-
-      div:where(.swal2-container) .swal2-select {
-        min-width: 50%;
-        max-width: 100%;
-        padding: .375em .625em;
-        background: rgba(0, 0, 0, 0);
-        color: inherit;
-        font-size: 1.125em
-      }
-
-      div:where(.swal2-container) .swal2-radio,
-      div:where(.swal2-container) .swal2-checkbox {
-        align-items: center;
-        justify-content: center;
-        background: #fff;
-        color: inherit
-      }
-
-      div:where(.swal2-container) .swal2-radio label,
-      div:where(.swal2-container) .swal2-checkbox label {
-        margin: 0 .6em;
-        font-size: 1.125em
-      }
-
-      div:where(.swal2-container) .swal2-radio input,
-      div:where(.swal2-container) .swal2-checkbox input {
-        flex-shrink: 0;
-        margin: 0 .4em
-      }
-
-      div:where(.swal2-container) label:where(.swal2-input-label) {
-        display: flex;
-        justify-content: center;
-        margin: 1em auto 0
-      }
-
-      div:where(.swal2-container) div:where(.swal2-validation-message) {
-        align-items: center;
-        justify-content: center;
-        margin: 1em 0 0;
-        padding: .625em;
-        overflow: hidden;
-        background: #f0f0f0;
-        color: #666;
-        font-size: 1em;
-        font-weight: 300
-      }
-
-      div:where(.swal2-container) div:where(.swal2-validation-message)::before {
-        content: "!";
-        display: inline-block;
-        width: 1.5em;
-        min-width: 1.5em;
-        height: 1.5em;
-        margin: 0 .625em;
-        border-radius: 50%;
-        background-color: #f27474;
-        color: #fff;
-        font-weight: 600;
-        line-height: 1.5em;
-        text-align: center
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps {
-        flex-wrap: wrap;
-        align-items: center;
-        max-width: 100%;
-        margin: 1.25em auto;
-        padding: 0;
-        background: rgba(0, 0, 0, 0);
-        font-weight: 600
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps li {
-        display: inline-block;
-        position: relative
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {
-        z-index: 20;
-        flex-shrink: 0;
-        width: 2em;
-        height: 2em;
-        border-radius: 2em;
-        background: #2778c4;
-        color: #fff;
-        line-height: 2em;
-        text-align: center
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
-        background: #2778c4
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
-        background: #add8e6;
-        color: #fff
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
-        background: #add8e6
-      }
-
-      div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line {
-        z-index: 10;
-        flex-shrink: 0;
-        width: 2.5em;
-        height: .4em;
-        margin: 0 -1px;
-        background: #2778c4
-      }
-
-      div:where(.swal2-icon) {
-        position: relative;
-        box-sizing: content-box;
-        justify-content: center;
-        width: 5em;
-        height: 5em;
-        margin: 2.5em auto .6em;
-        border: 0.25em solid rgba(0, 0, 0, 0);
-        border-radius: 50%;
-        border-color: #000;
-        font-family: inherit;
-        line-height: 5em;
-        cursor: default;
-        user-select: none
-      }
-
-      div:where(.swal2-icon) .swal2-icon-content {
-        display: flex;
-        align-items: center;
-        font-size: 3.75em
-      }
-
-      div:where(.swal2-icon).swal2-error {
-        border-color: #f27474;
-        color: #f27474
-      }
-
-      div:where(.swal2-icon).swal2-error .swal2-x-mark {
-        position: relative;
-        flex-grow: 1
-      }
-
-      div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {
-        display: block;
-        position: absolute;
-        top: 2.3125em;
-        width: 2.9375em;
-        height: .3125em;
-        border-radius: .125em;
-        background-color: #f27474
-      }
-
-      div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left] {
-        left: 1.0625em;
-        transform: rotate(45deg)
-      }
-
-      div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right] {
-        right: 1em;
-        transform: rotate(-45deg)
-      }
-
-      div:where(.swal2-icon).swal2-error.swal2-icon-show {
-        animation: swal2-animate-error-icon .5s
-      }
-
-      div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {
-        animation: swal2-animate-error-x-mark .5s
-      }
-
-      div:where(.swal2-icon).swal2-warning {
-        border-color: #facea8;
-        color: #f8bb86
-      }
-
-      div:where(.swal2-icon).swal2-warning.swal2-icon-show {
-        animation: swal2-animate-error-icon .5s
-      }
-
-      div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content {
-        animation: swal2-animate-i-mark .5s
-      }
-
-      div:where(.swal2-icon).swal2-info {
-        border-color: #9de0f6;
-        color: #3fc3ee
-      }
-
-      div:where(.swal2-icon).swal2-info.swal2-icon-show {
-        animation: swal2-animate-error-icon .5s
-      }
-
-      div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {
-        animation: swal2-animate-i-mark .8s
-      }
-
-      div:where(.swal2-icon).swal2-question {
-        border-color: #c9dae1;
-        color: #87adbd
-      }
-
-      div:where(.swal2-icon).swal2-question.swal2-icon-show {
-        animation: swal2-animate-error-icon .5s
-      }
-
-      div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content {
-        animation: swal2-animate-question-mark .8s
-      }
-
-      div:where(.swal2-icon).swal2-success {
-        border-color: #a5dc86;
-        color: #a5dc86
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {
-        position: absolute;
-        width: 3.75em;
-        height: 7.5em;
-        transform: rotate(45deg);
-        border-radius: 50%
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left] {
-        top: -0.4375em;
-        left: -2.0635em;
-        transform: rotate(-45deg);
-        transform-origin: 3.75em 3.75em;
-        border-radius: 7.5em 0 0 7.5em
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right] {
-        top: -0.6875em;
-        left: 1.875em;
-        transform: rotate(-45deg);
-        transform-origin: 0 3.75em;
-        border-radius: 0 7.5em 7.5em 0
-      }
-
-      div:where(.swal2-icon).swal2-success .swal2-success-ring {
-        position: absolute;
-        z-index: 2;
-        top: -0.25em;
-        left: -0.25em;
-        box-sizing: content-box;
-        width: 100%;
-        height: 100%;
-        border: .25em solid rgba(165, 220, 134, .3);
-        border-radius: 50%
-      }
-
-      div:where(.swal2-icon).swal2-success .swal2-success-fix {
-        position: absolute;
-        z-index: 1;
-        top: .5em;
-        left: 1.625em;
-        width: .4375em;
-        height: 5.625em;
-        transform: rotate(-45deg)
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
-        display: block;
-        position: absolute;
-        z-index: 2;
-        height: .3125em;
-        border-radius: .125em;
-        background-color: #a5dc86
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {
-        top: 2.875em;
-        left: .8125em;
-        width: 1.5625em;
-        transform: rotate(45deg)
-      }
-
-      div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {
-        top: 2.375em;
-        right: .5em;
-        width: 2.9375em;
-        transform: rotate(-45deg)
-      }
-
-      div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip {
-        animation: swal2-animate-success-line-tip .75s
-      }
-
-      div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long {
-        animation: swal2-animate-success-line-long .75s
-      }
-
-      div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {
-        animation: swal2-rotate-success-circular-line 4.25s ease-in
-      }
-
-      [class^=swal2] {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-      }
-
-      .swal2-show {
-        animation: swal2-show .3s
-      }
-
-      .swal2-hide {
-        animation: swal2-hide .15s forwards
-      }
-
-      .swal2-noanimation {
-        transition: none
-      }
-
-      .swal2-scrollbar-measure {
-        position: absolute;
-        top: -9999px;
-        width: 50px;
-        height: 50px;
-        overflow: scroll
-      }
-
-      .swal2-rtl .swal2-close {
-        margin-right: initial;
-        margin-left: 0
-      }
-
-      .swal2-rtl .swal2-timer-progress-bar {
-        right: 0;
-        left: auto
-      }
-
-      @keyframes swal2-toast-show {
-        0% {
-          transform: translateY(-0.625em) rotateZ(2deg)
-        }
-
-        33% {
-          transform: translateY(0) rotateZ(-2deg)
-        }
-
-        66% {
-          transform: translateY(0.3125em) rotateZ(2deg)
-        }
-
-        100% {
-          transform: translateY(0) rotateZ(0deg)
-        }
-      }
-
-      @keyframes swal2-toast-hide {
-        100% {
-          transform: rotateZ(1deg);
-          opacity: 0
-        }
-      }
-
-      @keyframes swal2-toast-animate-success-line-tip {
-        0% {
-          top: .5625em;
-          left: .0625em;
-          width: 0
-        }
-
-        54% {
-          top: .125em;
-          left: .125em;
-          width: 0
-        }
-
-        70% {
-          top: .625em;
-          left: -0.25em;
-          width: 1.625em
-        }
-
-        84% {
-          top: 1.0625em;
-          left: .75em;
-          width: .5em
-        }
-
-        100% {
-          top: 1.125em;
-          left: .1875em;
-          width: .75em
-        }
-      }
-
-      @keyframes swal2-toast-animate-success-line-long {
-        0% {
-          top: 1.625em;
-          right: 1.375em;
-          width: 0
-        }
-
-        65% {
-          top: 1.25em;
-          right: .9375em;
-          width: 0
-        }
-
-        84% {
-          top: .9375em;
-          right: 0;
-          width: 1.125em
-        }
-
-        100% {
-          top: .9375em;
-          right: .1875em;
-          width: 1.375em
-        }
-      }
-
-      @keyframes swal2-show {
-        0% {
-          transform: scale(0.7)
-        }
-
-        45% {
-          transform: scale(1.05)
-        }
-
-        80% {
-          transform: scale(0.95)
-        }
-
-        100% {
-          transform: scale(1)
-        }
-      }
-
-      @keyframes swal2-hide {
-        0% {
-          transform: scale(1);
-          opacity: 1
-        }
-
-        100% {
-          transform: scale(0.5);
-          opacity: 0
-        }
-      }
-
-      @keyframes swal2-animate-success-line-tip {
-        0% {
-          top: 1.1875em;
-          left: .0625em;
-          width: 0
-        }
-
-        54% {
-          top: 1.0625em;
-          left: .125em;
-          width: 0
-        }
-
-        70% {
-          top: 2.1875em;
-          left: -0.375em;
-          width: 3.125em
-        }
-
-        84% {
-          top: 3em;
-          left: 1.3125em;
-          width: 1.0625em
-        }
-
-        100% {
-          top: 2.8125em;
-          left: .8125em;
-          width: 1.5625em
-        }
-      }
-
-      @keyframes swal2-animate-success-line-long {
-        0% {
-          top: 3.375em;
-          right: 2.875em;
-          width: 0
-        }
-
-        65% {
-          top: 3.375em;
-          right: 2.875em;
-          width: 0
-        }
-
-        84% {
-          top: 2.1875em;
-          right: 0;
-          width: 3.4375em
-        }
-
-        100% {
-          top: 2.375em;
-          right: .5em;
-          width: 2.9375em
-        }
-      }
-
-      @keyframes swal2-rotate-success-circular-line {
-        0% {
-          transform: rotate(-45deg)
-        }
-
-        5% {
-          transform: rotate(-45deg)
-        }
-
-        12% {
-          transform: rotate(-405deg)
-        }
-
-        100% {
-          transform: rotate(-405deg)
-        }
-      }
-
-      @keyframes swal2-animate-error-x-mark {
-        0% {
-          margin-top: 1.625em;
-          transform: scale(0.4);
-          opacity: 0
-        }
-
-        50% {
-          margin-top: 1.625em;
-          transform: scale(0.4);
-          opacity: 0
-        }
-
-        80% {
-          margin-top: -0.375em;
-          transform: scale(1.15)
-        }
-
-        100% {
-          margin-top: 0;
-          transform: scale(1);
-          opacity: 1
-        }
-      }
-
-      @keyframes swal2-animate-error-icon {
-        0% {
-          transform: rotateX(100deg);
-          opacity: 0
-        }
-
-        100% {
-          transform: rotateX(0deg);
-          opacity: 1
-        }
-      }
-
-      @keyframes swal2-rotate-loading {
-        0% {
-          transform: rotate(0deg)
-        }
-
-        100% {
-          transform: rotate(360deg)
-        }
-      }
-
-      @keyframes swal2-animate-question-mark {
-        0% {
-          transform: rotateY(-360deg)
-        }
-
-        100% {
-          transform: rotateY(0)
-        }
-      }
-
-      @keyframes swal2-animate-i-mark {
-        0% {
-          transform: rotateZ(45deg);
-          opacity: 0
-        }
-
-        25% {
-          transform: rotateZ(-25deg);
-          opacity: .4
-        }
-
-        50% {
-          transform: rotateZ(15deg);
-          opacity: .8
-        }
-
-        75% {
-          transform: rotateZ(-5deg);
-          opacity: 1
-        }
-
-        100% {
-          transform: rotateX(0);
-          opacity: 1
-        }
-      }
-
-      body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
-        overflow: hidden
-      }
-
-      body.swal2-height-auto {
-        height: auto !important
-      }
-
-      body.swal2-no-backdrop .swal2-container {
-        background-color: rgba(0, 0, 0, 0) !important;
-        pointer-events: none
-      }
-
-      body.swal2-no-backdrop .swal2-container .swal2-popup {
-        pointer-events: all
-      }
-
-      body.swal2-no-backdrop .swal2-container .swal2-modal {
-        box-shadow: 0 0 10px rgba(0, 0, 0, .4)
-      }
-
-      @media print {
-        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
-          overflow-y: scroll !important
-        }
-
-        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {
-          display: none
-        }
-
-        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
-          position: static !important
-        }
-      }
-
-      body.swal2-toast-shown .swal2-container {
-        box-sizing: border-box;
-        width: 360px;
-        max-width: 100%;
-        background-color: rgba(0, 0, 0, 0);
-        pointer-events: none
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-top {
-        inset: 0 auto auto 50%;
-        transform: translateX(-50%)
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-top-end,
-      body.swal2-toast-shown .swal2-container.swal2-top-right {
-        inset: 0 0 auto auto
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-top-start,
-      body.swal2-toast-shown .swal2-container.swal2-top-left {
-        inset: 0 auto auto 0
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-center-start,
-      body.swal2-toast-shown .swal2-container.swal2-center-left {
-        inset: 50% auto auto 0;
-        transform: translateY(-50%)
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-center {
-        inset: 50% auto auto 50%;
-        transform: translate(-50%, -50%)
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-center-end,
-      body.swal2-toast-shown .swal2-container.swal2-center-right {
-        inset: 50% 0 auto auto;
-        transform: translateY(-50%)
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-bottom-start,
-      body.swal2-toast-shown .swal2-container.swal2-bottom-left {
-        inset: auto auto 0 0
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-bottom {
-        inset: auto auto 0 50%;
-        transform: translateX(-50%)
-      }
-
-      body.swal2-toast-shown .swal2-container.swal2-bottom-end,
-      body.swal2-toast-shown .swal2-container.swal2-bottom-right {
-        inset: auto 0 0 auto
-      }
-    </style>
-  </head>
-  <!-- Bắt đầu phần hiển thị -->
-  <body>
-    <!-- Code chong click chuot phai trai + view source -->
-    <script type="text/javascript">
-      //
-      < ![CDATA[shortcut = {
-            all_shortcuts: {},
-            add: function(a, b, c) {
-              var d = {
-                type: "keydown",
-                propagate: !1,
-                disable_in_input: !1,
-                target: document,
-                keycode: !1
-              };
-              if (c)
-                for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);
-              else c = d;
-              d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function(d) {
-                d = d || window.event;
-                if (c.disable_in_input) {
-                  var e;
-                  d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
-                  if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return
-                }
-                d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = ".");
-                var f = a.split("+"),
-                  g = 0,
-                  h = {
-                    "`": "~",
-                    1: "!",
-                    2: "@",
-                    3: "#",
-                    4: "$",
-                    5: "%",
-                    6: "^",
-                    7: "&",
-                    8: "*",
-                    9: "(",
-                    0: ")",
-                    "-": "_",
-                    "=": "+",
-                    ";": ":",
-                    "'": '"',
-                    ",": "<",
-                    ".": ">",
-                    "/": "?",
-                    "\\": "|"
-                  },
-                  i = {
-                    esc: 27,
-                    escape: 27,
-                    tab: 9,
-                    space: 32,
-                    "return": 13,
-                    enter: 13,
-                    backspace: 8,
-                    scrolllock: 145,
-                    scroll_lock: 145,
-                    scroll: 145,
-                    capslock: 20,
-                    caps_lock: 20,
-                    caps: 20,
-                    numlock: 144,
-                    num_lock: 144,
-                    num: 144,
-                    pause: 19,
-                    "break": 19,
-                    insert: 45,
-                    home: 36,
-                    "delete": 46,
-                    end: 35,
-                    pageup: 33,
-                    page_up: 33,
-                    pu: 33,
-                    pagedown: 34,
-                    page_down: 34,
-                    pd: 34,
-                    left: 37,
-                    up: 38,
-                    right: 39,
-                    down: 40,
-                    f1: 112,
-                    f2: 113,
-                    f3: 114,
-                    f4: 115,
-                    f5: 116,
-                    f6: 117,
-                    f7: 118,
-                    f8: 119,
-                    f9: 120,
-                    f10: 121,
-                    f11: 122,
-                    f12: 123
-                  },
-                  j = !1,
-                  l = !1,
-                  m = !1,
-                  n = !1,
-                  o = !1,
-                  p = !1,
-                  q = !1,
-                  r = !1;
-                d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
-                for (var s = 0; k = f[s], s < f.length; s++) "ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++);
-                if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1
-              }, this.all_shortcuts[a] = {
-                callback: e,
-                target: d,
-                event: c.type
-              }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e
-            },
-            remove: function(a) {
-              var a = a.toLowerCase(),
-                b = this.all_shortcuts[a];
-              delete this.all_shortcuts[a];
-              if (b) {
-                var a = b.event,
-                  c = b.target,
-                  b = b.callback;
-                c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1
-              }
-            }
-          }, shortcut.add("Ctrl+U", function() {
-            top.location.href = "https://iloveu4ever.ga"
-          }), shortcut.add("F12", function() {
-            top.location.href = "https://iloveu4ever.ga/troll.html"
-          }), shortcut.add("Ctrl+Shift+I", function() {
-            top.location.href = "https://iloveu4ever.ga/troll.html"
-          }), shortcut.add("Ctrl+S", function() {
-            top.location.href = "https://iloveu4ever.ga/troll.html"
-          }), shortcut.add("Ctrl+Shift+C", function() {
-            top.location.href = "https://iloveu4ever.ga/troll.html"
-          });
-          var message = "NoRightClicking";
-
-          function defeatIE() {
-            if (document.all) {
-              (message);
-              return false;
-            }
-          }
-
-          function defeatNS(e) {
-            if (document.layers || (document.getElementById && !document.all)) {
-              if (e.which == 2 || e.which == 3) {
-                (message);
-                return false;
-              }
-            }
-          }
-          if (document.layers) {
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown = defeatNS;
-          } else {
-            document.onmouseup = defeatNS;
-            document.oncontextmenu = defeatIE;
-          }
-          document.oncontextmenu = new Function("return false")
-          //]]>
-    </script>
-    <style type="text/css">
-      body {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-      }
-    </style>
-    <div aria-hidden="true" class="snowflakes">
-      <div class="snowflake" style="font-size: 6px;"> ❅ </div>
-      <div class="snowflake"> ✵ </div>
-      <div class="snowflake" style="font-size: 9px;"> ✵ </div>
-      <div class="snowflake"> ❅ </div>
-      <div class="snowflake" style="font-size: 19px;"> ❆ </div>
-      <div class="snowflake" style="font-size: 16px;"> ❅ </div>
-      <div class="snowflake" style="font-size: 13px;"> ❆ </div>
-      <div class="snowflake" style="font-size: 11px;"> ❀ </div>
-      <div class="snowflake" style="font-size: 12px;"> ❆ </div>
-      <div class="snowflake" style="font-size: 10px;"> ❀ </div>
-      <div class="snowflake" style="font-size: 9px;"> ❀ </div>
-      <div class="snowflake" style="font-size: 7px;"> ❀ </div>
-      <div class="snowflake" style="font-size: 12px;"> ✺ </div>
-      <div class="snowflake" style="font-size: 15px;"> ✺ </div>
-    </div>
-    <div class="snow-container">
-      <div class="snow foreground"></div>
-      <div class="snow foreground layered"></div>
-      <div class="snow middleground"></div>
-      <div class="snow middleground layered"></div>
-      <div class="snow background"></div>
-      <div class="snow background layered"></div>
-    </div>
-    <!-- loading -->
-    <div class="loader" style="display: none;">
-      <div class="loader-inner">
-        <div class="loader-line-wrap">
-          <div class="loader-line"></div>
-        </div>
-        <div class="loader-line-wrap">
-          <div class="loader-line"></div>
-        </div>
-        <div class="loader-line-wrap">
-          <div class="loader-line"></div>
-        </div>
-        <div class="loader-line-wrap">
-          <div class="loader-line"></div>
-        </div>
-        <div class="loader-line-wrap">
-          <div class="loader-line"></div>
-        </div>
-      </div>
-    </div>
-    <!-- main -->
-    <div class="center" id="window">
-      <div id="main">
-        <!-- avatar -->
-        <div class="center" id="cover">
-          <div id="bg-cover"></div>
-          <div id="avatar">
-            <img alt="avt" src="https://i.imgur.com/oJuJPJb.png">
-          </div>
-        </div>
-        <div id="content">
-          <!-- info -->
-          <p id="name"> Tieu Đuc Manh <i class="fad fa-badge-check"></i>
-            <!--Tên hiển thị-->
-          </p>
-          <div class="center">
-            <span class="badge">
-              <i class="fas fa-code"></i> Designer and developer </span>
-            <!--Mô tả 1 (Có thể thay fa fa icon)-->
-          </div>
-          <p id="bio">Đường tình anh thua đường đua anh cũng chịu</p>
-          <!--Mô tả 2-->
-          <marquee behavior="alternate" style="border:red 3px SOLID">
-            <p></p>
-            <p class="test"> tuyen em NY treTRau đi PayLak</p>
-          </marquee>
-          <!--Mô tả 3-->
-          <div class="center">
-            <div class="border"></div>
-          </div>
-          <!-- contact -->
-          <div class="center boxs" id="boxs">
-            <!-- facebook -->
-            <div class="box facebook">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <i class="fab fa-facebook"></i>
-                  </div>
-                </div>
-                <div class="col-10" onclick="openlink(&quot;https://www.facebook.com/menjmoi/&quot;)">
-                  <p class="detail">Facebook</p>
-                  <p class="linked">Mạnh</p>
-                </div>
-              </div>
-            </div>
-            <!-- tiktok <div class='box tiktok'><div class='row'><div class='col-2'><div class='icon'><i class='fab fa-tiktok'></i></div></div><div class='col-10' onclick='openlink("https://www.tiktok.com/@tiktokmdrlb")'><p class='detail'>TikTok</p><p class='linked'>ManhDepTry</p></div></div></div> -->
-            <!-- messenger -->
-            <div class="box messenger">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <i class="fab fa-facebook-messenger"></i>
-                  </div>
-                </div>
-                <div class="col-10" onclick="openlink(&quot;https://www.m.me/menjmoi/&quot;)">
-                  <p class="detail">Messenger</p>
-                  <p class="linked">Mạnh</p>
-                </div>
-              </div>
-            </div>
-            <!-- zalo -->
-            <div class="box zalo">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <div class="div-logo zalo-icon"></div>
-                  </div>
-                </div>
-                <div class="col-10" onclick="openlink(&quot;https://www.zalo.me/menjmoi/&quot;);">
-                  <p class="detail">Zalo</p>
-                  <p class="linked">menjmoi</p>
-                </div>
-              </div>
-            </div>
-            <!-- phone -->
-            <div class="box phone">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                </div>
-                <div class="col-10" onclick="openlink(&quot;tel:+84366520607&quot;);">
-                  <p class="detail">Phone</p>
-                  <p class="linked">0366.520.607</p>
-                </div>
-              </div>
-            </div>
-            <!-- tele -->
-            <div class="box telegram">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <div class="div-logo telegram-icon"></div>
-                  </div>
-                </div>
-                <div class="col-10" onclick="openlink(&quot;https://t.me/menjmoi&quot;);">
-                  <p class="detail">Telegram</p>
-                  <p class="linked">menjmoi</p>
-                </div>
-              </div>
-            </div>
-            <!-- momo -->
-            <div class="box momo">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <div class="div-logo momo-icon"></div>
-                  </div>
-                </div>
-                <div class="col-10" onclick="copytext2(&quot;0366520607&quot;);openlink(&quot;https://nhantien.momo.vn/0366520607&quot;);">
-                  <p class="detail">Momo</p>
-                  <p class="linked">0366520607</p>
-                </div>
-              </div>
-            </div>
-            <style>
-              p.left {
-                right: 41px;
-                top: 162px;
-                font-size: 9px;
-                color: red;
-                position: absolute;
-              }
-            </style>
-            <p class="left">Đừng ấn vào ô này→</p>
-            <a href="https://www.facebook.com/menjmoi" target="_blank">
-              <button class="btn3">
-                <span>🙅</span>
-              </button>
-            </a>
-            <style>
-              .btn3 {
-                padding: 2px;
-                outline: 0;
-                font-size: 9px;
-                position: absolute;
-                top: 150px;
-                right: 3px;
-                color: rgb(255, 255, 255);
-                background: -webkit-gradient(linear,
-                    left top,
-                    right top,
-                    from(#fdde5c),
-                    color-stop(#f8ab5e),
-                    color-stop(#f56a62),
-                    color-stop(#a176c8),
-                    color-stop(#759beb),
-                    color-stop(#65beb3),
-                    to(#70db96));
-                background: linear-gradient(to right,
-                    #fdde5c,
-                    #f8ab5e,
-                    #f56a62,
-                    #a176c8,
-                    #759beb,
-                    #65beb3,
-                    #70db96);
-                border-radius: 30px;
-                border: 0;
-                box-shadow: none;
-                cursor: pointer;
-              }
-
-              .btn3>span {
-                display: block;
-                padding: 6px 9px;
-                font-size: 13px;
-                background: #0e0e10;
-                border-radius: 16px;
-              }
-            </style>
-            <div class='box vietcombank'>
-              <div class='row'>
-                <div class='col-2'>
-                  <div class='icon'>
-                    <div class='div-logo vietcombank-icon'></div>
-                  </div>
-                </div>
-                <div class='col-10' onclick='copytext3("tieuducmanh");'>
-                  <p class='detail'>BIDV</p>
-                  <p class='linked'>menjmoi</p>
-                </div>
-              </div>
-            </div>
-            <!-- mbbank -->
-            <div class="box mbbank">
-              <div class="row">
-                <div class="col-2">
-                  <div class="icon">
-                    <div class="div-logo mbbank-icon"></div>
-                  </div>
-                </div>
-                <div class="col-10" onclick="copytext(&quot;12666666605&quot;);">
-                  <p class="detail">MBBank</p>
-                  <p class="linked">12666666605</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p id="bio">Copyright © <a href="https://facebook.com/menjmoi" rel="noopener noreferrer" target="_blank">Tiêu Đức Mạnh</a>
-          </p>
-        </div>
-      </div>
-      <div id="bg"></div>
-    </div>
-    <script type="text/javascript">
-      //
-      < ![CDATA[
-          // Phần hiệu ứng tải trang
-          $(".loader").delay(900).fadeOut("fast");
-          // open link
-          function openlink(url) {
-            window.open(url, "_blank").focus();
-          }
-          // click copy
-          function copytext(str) {
-            const el = document.createElement("textarea");
-            el.value = str;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand("copy");
-            Swal.fire("Thông báo", "Copy stk MB thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");
-          }
-
-          function copytext2(str) {
-            const el = document.createElement("textarea");
-            el.value = str;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand("copy");
-            Swal.fire("Thông báo", "Copy stk MOMO thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");
-          }
-
-          function copytext3(str) {
-            const el = document.createElement("textarea");
-            el.value = str;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand("copy");
-            Swal.fire("Thông báo", "Copy stk BIDV thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");
-          }
-          //]]>
-    </script>
-    <div class="section" id="https://facebook.com/menjmoi">
-      <!-- Kết thúc phần hiển thị -->
-      <!-- Modify time: 5/6/2022 By ManhDepTraiSieuCapProVjp - UPDATE 29/10/2023 + UPDATE V2 11/11/2023-->
-  </body>
-</html>
+<html class="v2" dir="ltr" lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>    <script type="text/javascript">        //<![CDATA[        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;        var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;        function DisableExitTraffic() {            PreventExitSplash = true;        }        function addLoadEvent(func) {            var oldonload = window.onload;            if (typeof window.onload != 'function') {                window.onload = func;            } else {                window.onload = function() {                    if (oldonload) {                        oldonload();                    }                    func();                }            }        }        function addClickEvent(a, i, func) {            if (typeof a[i].onclick != 'function') {                a[i].onclick = func;            }        }        theBody = document.body;        if (!theBody) {            theBody = document.getElementById("body");            if (!theBody) {                theBody = document.getElementsByTagName("body")[0];            }        }        var PreventExitSplash = false;        var LightwindowOpening = false;        function DisplayExitSplash() {            if (PreventExitSplash == false) {                window.scrollTo(0, 0);                if (is_firefox) {                    //window.alert(exittraffic_splashalertmessage);                }                PreventExitSplash = true;                if (is_chrome || is_firefox) {                    timeout_variable = setTimeout("exittraffic_change_url();", 1000);                } else {                    document.location.href = exittraffic_RedirectUrl;                }                return exittraffic_splashalertmessage;            }        }        var a = document.getElementsByTagName('A');        for (var i = 0; i < a.length; i++) {            if (a[i].target !== '_blank') {                addClickEvent(a, i, function() {                    PreventExitSplash = true;                });            } else {                addClickEvent(a, i, function() {                    PreventExitSplash = false;                });            }        }        disablelinksfunc = function() {            var a = document.getElementsByTagName('A');            for (var i = 0; i < a.length; i++) {                if (a[i].target !== '_blank') {                    addClickEvent(a, i, function() {                        PreventExitSplash = true;                    });                } else {                    addClickEvent(a, i, function() {                        PreventExitSplash = false;                    });                }            }        }        addLoadEvent(disablelinksfunc);        disableformsfunc = function() {            // Makes that clicking on the links on the page will not cause this popup to appear            var f = document.getElementsByTagName('form');            for (var i = 0; i < f.length; i++) {                if (!f[i].onclick) {                    f[i].onclick = function() {                        if (LightwindowOpening == false) {                            PreventExitSplash = true;                        }                    }                } else if (!f[i].onsubmit) {                    f[i].onsubmit = function() {                        PreventExitSplash = true;                    }                }            }        }        function exittraffic_change_url() {            disable_confirmation = false;            clearTimeout(timeout_variable); // just to make sure            document.location.href = exittraffic_RedirectUrl;        }        addLoadEvent(disableformsfunc);        window.onbeforeunload = DisplayExitSplash;        //]]>    </script>    <script>        if (confirm("Heluku cho hỏi xíu đee") == true) {            let cc = prompt("Mạnh có đeptrai khong?", "hoặc hỏi gì đó khác cũng được mình sẽ trả lời hếtt =))");            switch (cc) {                case "Có":                    alert("Hjhj iuu cậu nhìuuu 😘😍");                    break;                case "có":                    alert("Hjhj iuu cậu nhìuuu 😘😍");                    break;                case "Không":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "không":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Hoq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Hoqq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Hoqqq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "hoq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "hoqq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "hoqqq":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "k":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "K":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Đéo":                    alert("Ơ kìa khong bậy nhaa");                    break;                case "đéo":                    alert("Ơ kìa khong bậy nhaa");                    break;                case "Đeo":                    alert("Ơ kìa khong bậy nhaa");                    break;                case "đeo":                    alert("Ơ kìa khong bậy nhaa");                    break;                case "cc":                    alert("Nào nào bậy gòi");                    break;                case "Cc":                    alert("Nào nào bậy gòi");                    break;                case "Co":                    alert("Hjhj iuu cậu nhìuuu 😘😍");                    break;                case "co":                    alert("Hjhj iuu cậu nhìuuu 😘😍");                    break;                case "Ko":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "ko":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Khong":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "khong":                    alert("Ỏ, bạn thẳng thắn lắm đó =)))");                    break;                case "Loz":                    alert("Đm láo vừa nha mài");                    break;                case "loz":                    alert("Đm láo vừa nha mài");                    break;                case "Dm":                    alert("Đm láo vừa nha mài");                    break;                case "ny":                    alert("ế :((");                    break;                case "Ny":                    alert("ế :((");                    break;                case "Dmm":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "dm":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "dmm":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "Đm mạnh":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "Dm mạnh":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "Đm Mạnh":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "Đmm":                    alert("Concec😡 mèi chửi ai mèy 🤬");                    break;                case "Mạnh ăn cứt":                    alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");                    break;                case "Manh an cut":                    alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");                    break;                case "mạnh ăn cứt":                    alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");                    break;                case "manh an cut":                    alert("Cc mày ăn ý tao có phải 🐕 giống mày đâu mà ăn 😏");                    break;                case "Mạnh ăn loz":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "mạnh ăn loz":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Manh an loz":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "manh an loz":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Mạnh ăn lồn":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "mạnh ăn lồn":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Manh an lon":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "manh an lon":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Mạnh ăn lol":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "mạnh ăn lol":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Manh an lol":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "manh an lol":                    alert("Cái này thì chưa được ăn nha 😶");                    break;                case "Mạnh ngu":                    alert("Mày ngu hơn");                    break;                case "mạnh ngu":                    alert("Mày ngu hơn");                    break;                case "Manh ngu":                    alert("Mày ngu hơn");                    break;                case "manh ngu":                    alert("Mày ngu hơn");                    break;                case "Mạnh ngu":                    alert("Mày ngu hơn");                    break;                case "Chó mạnh":                    alert("Nổ mẹ địa chỉ đê chửi cc 😤");                    break;                case "Chó Mạnh":                    alert("Nổ mẹ địa chỉ đê chửi cc 😤");                    break;                case "chó mạnh":                    alert("Nổ mẹ địa chỉ đê chửi cc 😤");                    break;                case "Cho manh":                    alert("Nổ mẹ địa chỉ đê chửi cc 😤");                    break;                case "cho manh":                    alert("Nổ mẹ địa chỉ đê chửi cc 😤");                    break;                case "Em yêu anh":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                case "em yêu anh":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                case "Em yeu anh":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                case "em yeu anh":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                case "I love you":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                case "i love you":                    alert("Anh đợi câu này từ em lâu lắm rồi đó! Còn chờ gì nữa mà không nhắn trực tiếp cho anh luôn nhỉ? Yêu emm nhìuuu lắm luoonnnn 😘");                    break;                default:                    alert("Có vẻ đây không phải là một câu trả lời, hệ thống sẽ cập nhật ý kiến này của bạn sau!");            }        } else {            alert("Không trả lời thì thuii, ấn ok để xem trang nhé!");        }    </script>    <title>In4 - TiuMẹn</title>    <!--Tile của web-->    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">    <link href="https://i.imgur.com/AfQhvpG.jpeg" rel="shortcut icon" type="image/x-icon">    <!-- icon web (bìa: #cover + #bg-cover, bg web: #bg)-->    <meta content="https://i.imgur.com/mdhpwnm.jpeg" property="og:image">    <meta content="https://www.tieuducmanh.xyz/" property="og:url">    <!-- link web-->    <meta content="website" property="og:type">    <meta content="ManhDepTry" property="og:title">    <meta content="Xây dựng và phát triển bởi ManhĐepTry !" property="og:description">    <link href="https://cdn.leanhduc.pro.vn/font-awesome/pro-5.15.3/css/all.css" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.css" rel="stylesheet">    <!-- Bắt đầu css-->    <style id="page-skin-1" type="text/css">        < !--        /* Chèn CSS vào đây */        /*------------------------------------------------*/        /* Name: Template giới thiệu bản thân version 8.1 */        /* Admin: ManhDepTry                              */        /* Phone: 0366520607                            */        /* Gmail: manhzack@gmail.com                   */        /*------------------------------------------------*/        @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");        @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Pattaya|Srisakdi&display=swap");        html,        body {            cursor: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mouse-f1.png"), auto        }        a:hover {            cursor: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mouse-f2.png"), auto        }        .loader {            background: #4568dc;            background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);            background: linear-gradient(to right, #b06ab3, #4568dc);            opacity: 0.6;            bottom: 0;            left: 0;            overflow: hidden;            position: fixed;            right: 0;            top: 0;            z-index: 99999        }        .loader-inner {            bottom: 0;            height: 60px;            left: 0;            margin: auto;            position: absolute;            right: 0;            top: 0;            width: 100px        }        .loader-line-wrap {            animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;            box-sizing: border-box;            height: 50px;            left: 0;            overflow: hidden;            position: absolute;            top: 0;            transform-origin: 50% 100%;            width: 100px        }        .loader-line {            border: 4px solid transparent;            border-radius: 100%;            box-sizing: border-box;            height: 100px;            left: 0;            margin: 0 auto;            position: absolute;            right: 0;            top: 0;            width: 100px        }        .loader-line-wrap:nth-child(1) {            animation-delay: -50ms        }        .loader-line-wrap:nth-child(2) {            animation-delay: -100ms        }        .loader-line-wrap:nth-child(3) {            animation-delay: -150ms        }        .loader-line-wrap:nth-child(4) {            animation-delay: -200ms        }        .loader-line-wrap:nth-child(5) {            animation-delay: -250ms        }        .loader-line-wrap:nth-child(1) .loader-line {            border-color: hsl(0, 80%, 60%);            height: 90px;            width: 90px;            top: 7px        }        .loader-line-wrap:nth-child(2) .loader-line {            border-color: hsl(60, 80%, 60%);            height: 76px;            width: 76px;            top: 14px        }        .loader-line-wrap:nth-child(3) .loader-line {            border-color: hsl(120, 80%, 60%);            height: 62px;            width: 62px;            top: 21px        }        .loader-line-wrap:nth-child(4) .loader-line {            border-color: hsl(180, 80%, 60%);            height: 48px;            width: 48px;            top: 28px        }        .loader-line-wrap:nth-child(5) .loader-line {            border-color: hsl(240, 80%, 60%);            height: 34px;            width: 34px;            top: 35px        }        @keyframes spin {            0%,            15% {                transform: rotate(0)            }            100% {                transform: rotate(360deg)            }        }        * {            font-family: "Roboto";            padding: 0;            margin: 0        }        .border {            position: relative;            width: 50%;            height: 2px;            background-color: rgb(138, 138, 138)        }        #boxs {            margin-top: 3px        }        #bg {            position: fixed;            min-height: 100vh;            min-width: 100%;            background-image: url("https://cdnb.artstation.com/p/assets/images/images/048/955/035/original/ryan-haight-highland-park-large.gif");            background-size: cover;            background-position: center;            margin: 0;            padding: 0;            top: 0;            left: 0        }        #window {            position: absolute;            min-height: 100%;            min-width: 100%;            background-color: #000000;            padding: 0;            top: 0;            left: 0        }        #main {            z-index: 2;            position: relative;            width: 450px;            padding-bottom: 5px;            background-color: #ffffffa4;            border-radius: 25px;            margin-top: 5px;            -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74)        }        #cover {            position: relative;            height: 100%;            width: 100%;            background-image: url("https://cdna.artstation.com/p/assets/images/images/060/746/018/original/feon-pixel-art-background-3.gif");            background-position: center;            background-size: cover;            border-top-left-radius: 25px;            border-top-right-radius: 25px;            padding-top: 30px;            padding-bottom: 30px        }        #bg-cover {            position: absolute;            height: 100%;            width: 100%;            background-image: url("https://cdna.artstation.com/p/assets/images/images/060/746/018/original/feon-pixel-art-background-3.gif");            background-position: center;            background-size: cover;            border-top-left-radius: 25px;            border-top-right-radius: 25px;            filter: opacity(0.6)        }        #avatar {            position: relative;            background-position: center;            background-size: cover;            border-radius: 100%;            border: 5px solid #1877f2;            -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74)        }        #avatar img {            height: 111px;            width: 111px;            border-radius: 50%;            object-fit: cover;            position: relative;            border: 2px solid #fff        }        .center {            display: flex;            justify-content: center;            align-items: center;            flex-direction: column;            margin-top: 0        }        #name {            text-align: center;            font-weight: bold;            font-size: 30px;            margin-top: 10px;            margin-bottom: 0;            font-family: "Lobster"        }        #name i {            color: #1877f2;            font-size: 25px        }        #bio {            text-align: center;            margin-top: 10px;            margin-bottom: 10px;            font-family: "sansserif";            font-size: 13px        }        #contact-text {            display: inline-block;            padding: 2px 15px;            border-radius: 15px;            margin-top: 10px;            margin: 10px auto;            text-align: center;            font-weight: lighter;            font-size: 20px;            color: #FB0606;            background: rgb(45, 136, 255);            background: rgb(45, 136, 255);            background: -moz-linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);            background: -webkit-linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);            background: linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);            font-family: "Lobster";            transition: all 250ms;            cursor: default        }        #contact-text:hover {            transform: scale(1.2);            padding: 2px 55px        }        .box {            height: 50px;            width: 75%;            margin: 5px auto;            border-radius: 20px;            background: rgb(42, 100, 173);            background: -moz-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);            background: -webkit-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);            background: linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a64ad", endColorstr="#2d88ff", GradientType=1);            -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.74);            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.74);            z-index: 1;            transition: all 250ms        }        .box:hover {            padding-right: 20px        }        .icon {            display: inline;            position: relative;            height: 50px;            width: 50px        }        .icon i {            font-size: 30px;            margin: 10px 20px;            color: #ffffff;            transition: transform 250ms;            z-index: 2        }        .icon i:hover {            transform: rotate(360deg)        }        .detail {            position: relative;            display: block;            margin: 0 auto;            font-size: 20px;            color: #ffffff;            text-align: center;            margin-top: 10px;            transition: all 500ms;            font-family: "cursive"        }        .col-10 {            position: relative;            max-height: 100%        }        .col-10:hover .detail {            filter: opacity(0);            z-index: -5        }        .col-10:hover .linked {            filter: opacity(1);            z-index: 5        }        .col-10:active .detail {            filter: opacity(0);            z-index: -5        }        .col-10:active .linked {            filter: opacity(1);            z-index: 5        }        .fas {            transition: all 250ms        }        .col-10:hover .fas {            transform: rotate(360deg)        }        .linked {            position: relative;            margin: 0 auto;            font-size: 20px;            color: #ffffff;            text-align: center;            margin-top: 10px;            transition: all 500ms;            top: -40px;            z-index: -2;            filter: opacity(0);            transition: all 1000ms;            font-family: "Roboto"        }        .div-logo {            position: relative;            height: 30px;            width: 30px;            background-position: center;            background-size: cover;            margin: 10px 20px;            z-index: 5;            transition: all 250ms        }        .div-logo:hover {            transform: rotate(360deg)        }        @media only screen and (max-width:540px) {            #main {                width: 100vw;                margin-top: 0vw;                margin-bottom: 0;                border-radius: 0            }            #bg-cover {                border-radius: 0            }            #window {                min-height: 100%;                min-width: 100%            }            .linked {                font-size: 19px            }        }        .facebook {            background: #3a5795;            color: #1c3977;            background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a5795), color-stop(100%, #2b4886));            background: -webkit-linear-gradient(top, #3a5795 0%, #2b4886 100%);            background: -moz-linear-gradient(top, #3a5795 0%, #2b4886 100%);            background: -o-linear-gradient(top, #3a5795 0%, #2b4886 100%);            background: -ms-linear-gradient(top, #3a5795 0%, #2b4886 100%);            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A5795', endColorstr='#2B4886', GradientType=0);            border: 1px solid #1c3977;            text-shadow: 0 1px 0 #4966a4;            -webkit-text-shadow: 0 1px 0 #4966a4;            -moz-text-shadow: 0 1px 0 #4966a4;            box-shadow: inset 0 1px 0 #4966a4;            -webkit-box-shadow: inset 0 1px 0 #4966a4;            -moz-box-shadow: inset 0 1px 0 #4966a4        }        .messenger {            background: #fc466b;            background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);            background: linear-gradient(to right, #3f5efb, #fc466b)        }        .tiktok {            background: #010101;            background: -webkit-linear-gradient(to right, #010101, #6c0016);            background: linear-gradient(to right, #010101, #6c0016)        }        .zalo {            background: #0064f7;            background: linear-gradient(127deg, #0064f7 0%, #2a7fff 100%)        }        .zalo-icon {            background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/zalo.png")        }        .phone {            background: #1f1c2c;            background: -webkit-linear-gradient(to right, #1f1c2c, #928dab);            background: linear-gradient(to right, #1f1c2c, #928dab)        }        .momo {            background: #a80069;            background: linear-gradient(127deg, #a80069 0%, #d73193 100%)        }        .momo-icon {            background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/momo.png")        }        .vietcombank {            background: #023327;            background: linear-gradient(127deg, #023327 0%, #3A9F85 100%)        }        .vietcombank-icon {            background-image: url("https://i.imgur.io/aC4OjYn_d.webp")        }        .telegram {            background: #0861AB;            background: linear-gradient(127deg, #14A8E8 0%, #0684BA 100%)        }        .telegram-icon {            background-image: url("https://cdn-icons-png.flaticon.com/512/906/906377.png")        }        .mbbank {            background: #1f00cf;            background: linear-gradient(127deg, #1f00cf 0%, #006db5 100%)        }        .mbbank-icon {            background-image: url("https://cdn.leanhduc.pro.vn/theme/theme-thong-tin-lien-he-version-2-0/images/mbbank.png")        }        .badge {            font-weight: bold;            color: #ffffff;            background-color: #E62488;            padding: 0.5px 3px;            border-radius: 3px;            font-size: 10px        }        a {            text-decoration: none !important;            color: rgb(42, 100, 173) !important        }        .snowflake {            color: white;        }        @-webkit-keyframes snowflakes-fall {            0% {                top: -10%;            }            100% {                top: 100%;            }        }        @-webkit-keyframes snowflakes-shake {            0% {                -webkit-transform: translateX(0px);                transform: translateX(0px);            }            50% {                -webkit-transform: translateX(80px);                transform: translateX(80px);            }            100% {                -webkit-transform: translateX(0px);                transform: translateX(0px);            }        }        @keyframes snowflakes-fall {            0% {                top: -10%;            }            100% {                top: 100%;            }        }        @keyframes snowflakes-shake {            0% {                transform: translateX(0px);            }            50% {                transform: translateX(80px);            }            100% {                transform: translateX(0px);            }        }        .snowflake {            position: fixed;            top: -10%;            z-index: 9999;            -webkit-user-select: none;            -moz-user-select: none;            -ms-user-select: none;            user-select: none;            cursor: default;            -webkit-animation-name: snowflakes-fall, snowflakes-shake;            -webkit-animation-duration: 10s, 3s;            -webkit-animation-timing-function: linear, ease-in-out;            -webkit-animation-iteration-count: infinite, infinite;            -webkit-animation-play-state: running, running;            animation-name: snowflakes-fall, snowflakes-shake;            animation-duration: 10s, 3s;            animation-timing-function: linear, ease-in-out;            animation-iteration-count: infinite, infinite;            animation-play-state: running, running;        }        .snowflake:nth-of-type(0) {            left: 1%;            -webkit-animation-delay: 0s, 0s;            animation-delay: 0s, 0s;        }        .snowflake:nth-of-type(1) {            left: 10%;            -webkit-animation-delay: 1s, 1s;            animation-delay: 1s, 1s;        }        .snowflake:nth-of-type(2) {            left: 20%;            -webkit-animation-delay: 6s, 0.5s;            animation-delay: 6s, 0.5s;        }        .snowflake:nth-of-type(3) {            left: 30%;            -webkit-animation-delay: 4s, 2s;            animation-delay: 4s, 2s;        }        .snowflake:nth-of-type(4) {            left: 40%;            -webkit-animation-delay: 2s, 2s;            animation-delay: 2s, 2s;        }        .snowflake:nth-of-type(5) {            left: 50%;            -webkit-animation-delay: 8s, 3s;            animation-delay: 8s, 3s;        }        .snowflake:nth-of-type(6) {            left: 60%;            -webkit-animation-delay: 6s, 2s;            animation-delay: 6s, 2s;        }        .snowflake:nth-of-type(7) {            left: 70%;            -webkit-animation-delay: 2.5s, 1s;            animation-delay: 2.5s, 1s;        }        .snowflake:nth-of-type(8) {            left: 80%;            -webkit-animation-delay: 1s, 0s;            animation-delay: 1s, 0s;        }        .snowflake:nth-of-type(9) {            left: 90%;            -webkit-animation-delay: 3s, 1.5s;            animation-delay: 3s, 1.5s;        }        .snow-container {            position: fixed;            width: 100%;            max-width: 100%;            z-index: 99999;            pointer-events: none;            overflow: hidden;            top: 0;            height: 100%        }        .snow {            display: block;            position: absolute;            z-index: 2;            top: 0;            right: 0;            bottom: 0;            left: 0;            pointer-events: none;            -webkit-transform: translate3d(0, -100%, 0);            transform: translate3d(0, -100%, 0);            -webkit-animation: snow linear infinite;            animation: snow linear infinite        }        .snow.foreground {            background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");            -webkit-animation-duration: 15s;            animation-duration: 10s        }        .snow.foreground.layered {            -webkit-animation-delay: 7.5s;            animation-delay: 7.5s        }        .snow.middleground {            background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");            -webkit-animation-duration: 20s;            animation-duration: 15s        }        .snow.middleground.layered {            -webkit-animation-delay: 10s;            animation-delay: 10s        }        .snow.background {            background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");            -webkit-animation-duration: 25s;            animation-duration: 20s        }        .snow.background.layered {            -webkit-animation-delay: 12.5s;            animation-delay: 12.5s        }        @-webkit-keyframes snow {            0% {                -webkit-transform: translate3d(0, -100%, 0);                transform: translate3d(0, -100%, 0)            }            100% {                -webkit-transform: translate3d(5%, 100%, 0);                transform: translate3d(5%, 100%, 0)            }        }        @keyframes snow {            0% {                -webkit-transform: translate3d(0, -100%, 0);                transform: translate3d(0, -100%, 0)            }            100% {                -webkit-transform: translate3d(5%, 100%, 0);                transform: translate3d(5%, 100%, 0)            }        }        @-webkit-keyframes my {            0% {                color: #FF186D;            }            50% {                color: #FF186D;            }            100% {                color: FF186D;            }        }        @-moz-keyframes my {            0% {                color: #FF186D;            }            50% {                color: #FF186D;            }            100% {                color: #FF186D;            }        }        @-o-keyframes my {            0% {                color: #00FF84;            }            50% {                color: #00FF84;            }            100% {                color: #00FF84;            }        }        @keyframes my {            0% {                color: #FF186D;            }            50% {                color: #FF186D;            }            100% {                color: #00FF84;            }        }        .test {            background: #fffff;            font-size: 19px;            vertical-align: sub;            font-weight: bold;            -webkit-animation: my 1ms infinite;            -moz-animation: my 1ms infinite;            -o-animation: my 1ms infinite;            animation: my 30ms infinite;        }        -->    </style>    <style>        .swal2-popup.swal2-toast {            box-sizing: border-box;            grid-column: 1/4 !important;            grid-row: 1/4 !important;            grid-template-columns: min-content auto min-content;            padding: 1em;            overflow-y: hidden;            background: #fff;            box-shadow: 0 0 1px rgba(0, 0, 0, .075), 0 1px 2px rgba(0, 0, 0, .075), 1px 2px 4px rgba(0, 0, 0, .075), 1px 3px 8px rgba(0, 0, 0, .075), 2px 4px 16px rgba(0, 0, 0, .075);            pointer-events: all        }        .swal2-popup.swal2-toast>* {            grid-column: 2        }        .swal2-popup.swal2-toast .swal2-title {            margin: .5em 1em;            padding: 0;            font-size: 1em;            text-align: initial        }        .swal2-popup.swal2-toast .swal2-loading {            justify-content: center        }        .swal2-popup.swal2-toast .swal2-input {            height: 2em;            margin: .5em;            font-size: 1em        }        .swal2-popup.swal2-toast .swal2-validation-message {            font-size: 1em        }        .swal2-popup.swal2-toast .swal2-footer {            margin: .5em 0 0;            padding: .5em 0 0;            font-size: .8em        }        .swal2-popup.swal2-toast .swal2-close {            grid-column: 3/3;            grid-row: 1/99;            align-self: center;            width: .8em;            height: .8em;            margin: 0;            font-size: 2em        }        .swal2-popup.swal2-toast .swal2-html-container {            margin: .5em 1em;            padding: 0;            overflow: initial;            font-size: 1em;            text-align: initial        }        .swal2-popup.swal2-toast .swal2-html-container:empty {            padding: 0        }        .swal2-popup.swal2-toast .swal2-loader {            grid-column: 1;            grid-row: 1/99;            align-self: center;            width: 2em;            height: 2em;            margin: .25em        }        .swal2-popup.swal2-toast .swal2-icon {            grid-column: 1;            grid-row: 1/99;            align-self: center;            width: 2em;            min-width: 2em;            height: 2em;            margin: 0 .5em 0 0        }        .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {            display: flex;            align-items: center;            font-size: 1.8em;            font-weight: bold        }        .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {            width: 2em;            height: 2em        }        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {            top: .875em;            width: 1.375em        }        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {            left: .3125em        }        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {            right: .3125em        }        .swal2-popup.swal2-toast .swal2-actions {            justify-content: flex-start;            height: auto;            margin: 0;            margin-top: .5em;            padding: 0 .5em        }        .swal2-popup.swal2-toast .swal2-styled {            margin: .25em .5em;            padding: .4em .6em;            font-size: 1em        }        .swal2-popup.swal2-toast .swal2-success {            border-color: #a5dc86        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {            position: absolute;            width: 1.6em;            height: 3em;            transform: rotate(45deg);            border-radius: 50%        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {            top: -0.8em;            left: -0.5em;            transform: rotate(-45deg);            transform-origin: 2em 2em;            border-radius: 4em 0 0 4em        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {            top: -0.25em;            left: .9375em;            transform-origin: 0 1.5em;            border-radius: 0 4em 4em 0        }        .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {            width: 2em;            height: 2em        }        .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {            top: 0;            left: .4375em;            width: .4375em;            height: 2.6875em        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {            height: .3125em        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {            top: 1.125em;            left: .1875em;            width: .75em        }        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {            top: .9375em;            right: .1875em;            width: 1.375em        }        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {            animation: swal2-toast-animate-success-line-tip .75s        }        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {            animation: swal2-toast-animate-success-line-long .75s        }        .swal2-popup.swal2-toast.swal2-show {            animation: swal2-toast-show .5s        }        .swal2-popup.swal2-toast.swal2-hide {            animation: swal2-toast-hide .1s forwards        }        div:where(.swal2-container) {            display: grid;            position: fixed;            z-index: 1060;            inset: 0;            box-sizing: border-box;            grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";            grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);            height: 100%;            padding: .625em;            overflow-x: hidden;            transition: background-color .1s;            -webkit-overflow-scrolling: touch        }        div:where(.swal2-container).swal2-backdrop-show,        div:where(.swal2-container).swal2-noanimation {            background: rgba(0, 0, 0, .4)        }        div:where(.swal2-container).swal2-backdrop-hide {            background: rgba(0, 0, 0, 0) !important        }        div:where(.swal2-container).swal2-top-start,        div:where(.swal2-container).swal2-center-start,        div:where(.swal2-container).swal2-bottom-start {            grid-template-columns: minmax(0, 1fr) auto auto        }        div:where(.swal2-container).swal2-top,        div:where(.swal2-container).swal2-center,        div:where(.swal2-container).swal2-bottom {            grid-template-columns: auto minmax(0, 1fr) auto        }        div:where(.swal2-container).swal2-top-end,        div:where(.swal2-container).swal2-center-end,        div:where(.swal2-container).swal2-bottom-end {            grid-template-columns: auto auto minmax(0, 1fr)        }        div:where(.swal2-container).swal2-top-start>.swal2-popup {            align-self: start        }        div:where(.swal2-container).swal2-top>.swal2-popup {            grid-column: 2;            align-self: start;            justify-self: center        }        div:where(.swal2-container).swal2-top-end>.swal2-popup,        div:where(.swal2-container).swal2-top-right>.swal2-popup {            grid-column: 3;            align-self: start;            justify-self: end        }        div:where(.swal2-container).swal2-center-start>.swal2-popup,        div:where(.swal2-container).swal2-center-left>.swal2-popup {            grid-row: 2;            align-self: center        }        div:where(.swal2-container).swal2-center>.swal2-popup {            grid-column: 2;            grid-row: 2;            align-self: center;            justify-self: center        }        div:where(.swal2-container).swal2-center-end>.swal2-popup,        div:where(.swal2-container).swal2-center-right>.swal2-popup {            grid-column: 3;            grid-row: 2;            align-self: center;            justify-self: end        }        div:where(.swal2-container).swal2-bottom-start>.swal2-popup,        div:where(.swal2-container).swal2-bottom-left>.swal2-popup {            grid-column: 1;            grid-row: 3;            align-self: end        }        div:where(.swal2-container).swal2-bottom>.swal2-popup {            grid-column: 2;            grid-row: 3;            justify-self: center;            align-self: end        }        div:where(.swal2-container).swal2-bottom-end>.swal2-popup,        div:where(.swal2-container).swal2-bottom-right>.swal2-popup {            grid-column: 3;            grid-row: 3;            align-self: end;            justify-self: end        }        div:where(.swal2-container).swal2-grow-row>.swal2-popup,        div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {            grid-column: 1/4;            width: 100%        }        div:where(.swal2-container).swal2-grow-column>.swal2-popup,        div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {            grid-row: 1/4;            align-self: stretch        }        div:where(.swal2-container).swal2-no-transition {            transition: none !important        }        div:where(.swal2-container) div:where(.swal2-popup) {            display: none;            position: relative;            box-sizing: border-box;            grid-template-columns: minmax(0, 100%);            width: 32em;            max-width: 100%;            padding: 0 0 1.25em;            border: none;            border-radius: 5px;            background: #fff;            color: #545454;            font-family: inherit;            font-size: 1rem        }        div:where(.swal2-container) div:where(.swal2-popup):focus {            outline: none        }        div:where(.swal2-container) div:where(.swal2-popup).swal2-loading {            overflow-y: hidden        }        div:where(.swal2-container) h2:where(.swal2-title) {            position: relative;            max-width: 100%;            margin: 0;            padding: .8em 1em 0;            color: inherit;            font-size: 1.875em;            font-weight: 600;            text-align: center;            text-transform: none;            word-wrap: break-word        }        div:where(.swal2-container) div:where(.swal2-actions) {            display: flex;            z-index: 1;            box-sizing: border-box;            flex-wrap: wrap;            align-items: center;            justify-content: center;            width: auto;            margin: 1.25em auto 0;            padding: 0        }        div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled] {            opacity: .4        }        div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))        }        div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active {            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))        }        div:where(.swal2-container) div:where(.swal2-loader) {            display: none;            align-items: center;            justify-content: center;            width: 2.2em;            height: 2.2em;            margin: 0 1.875em;            animation: swal2-rotate-loading 1.5s linear 0s infinite normal;            border-width: .25em;            border-style: solid;            border-radius: 100%;            border-color: #2778c4 rgba(0, 0, 0, 0) #2778c4 rgba(0, 0, 0, 0)        }        div:where(.swal2-container) button:where(.swal2-styled) {            margin: .3125em;            padding: .625em 1.1em;            transition: box-shadow .1s;            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);            font-weight: 500        }        div:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {            cursor: pointer        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {            border: 0;            border-radius: .25em;            background: initial;            background-color: #7066e0;            color: #fff;            font-size: 1em        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {            box-shadow: 0 0 0 3px rgba(112, 102, 224, .5)        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-deny {            border: 0;            border-radius: .25em;            background: initial;            background-color: #dc3741;            color: #fff;            font-size: 1em        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus {            box-shadow: 0 0 0 3px rgba(220, 55, 65, .5)        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {            border: 0;            border-radius: .25em;            background: initial;            background-color: #6e7881;            color: #fff;            font-size: 1em        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {            box-shadow: 0 0 0 3px rgba(110, 120, 129, .5)        }        div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {            box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)        }        div:where(.swal2-container) button:where(.swal2-styled):focus {            outline: none        }        div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner {            border: 0        }        div:where(.swal2-container) div:where(.swal2-footer) {            margin: 1em 0 0;            padding: 1em 1em 0;            border-top: 1px solid #eee;            color: inherit;            font-size: 1em;            text-align: center        }        div:where(.swal2-container) .swal2-timer-progress-bar-container {            position: absolute;            right: 0;            bottom: 0;            left: 0;            grid-column: auto !important;            overflow: hidden;            border-bottom-right-radius: 5px;            border-bottom-left-radius: 5px        }        div:where(.swal2-container) div:where(.swal2-timer-progress-bar) {            width: 100%;            height: .25em;            background: rgba(0, 0, 0, .2)        }        div:where(.swal2-container) img:where(.swal2-image) {            max-width: 100%;            margin: 2em auto 1em        }        div:where(.swal2-container) button:where(.swal2-close) {            z-index: 2;            align-items: center;            justify-content: center;            width: 1.2em;            height: 1.2em;            margin-top: 0;            margin-right: 0;            margin-bottom: -1.2em;            padding: 0;            overflow: hidden;            transition: color .1s, box-shadow .1s;            border: none;            border-radius: 5px;            background: rgba(0, 0, 0, 0);            color: #ccc;            font-family: monospace;            font-size: 2.5em;            cursor: pointer;            justify-self: end        }        div:where(.swal2-container) button:where(.swal2-close):hover {            transform: none;            background: rgba(0, 0, 0, 0);            color: #f27474        }        div:where(.swal2-container) button:where(.swal2-close):focus {            outline: none;            box-shadow: inset 0 0 0 3px rgba(100, 150, 200, .5)        }        div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {            border: 0        }        div:where(.swal2-container) .swal2-html-container {            z-index: 1;            justify-content: center;            margin: 1em 1.6em .3em;            padding: 0;            overflow: auto;            color: inherit;            font-size: 1.125em;            font-weight: normal;            line-height: normal;            text-align: center;            word-wrap: break-word;            word-break: break-word        }        div:where(.swal2-container) input:where(.swal2-input),        div:where(.swal2-container) input:where(.swal2-file),        div:where(.swal2-container) textarea:where(.swal2-textarea),        div:where(.swal2-container) select:where(.swal2-select),        div:where(.swal2-container) div:where(.swal2-radio),        div:where(.swal2-container) label:where(.swal2-checkbox) {            margin: 1em 2em 3px        }        div:where(.swal2-container) input:where(.swal2-input),        div:where(.swal2-container) input:where(.swal2-file),        div:where(.swal2-container) textarea:where(.swal2-textarea) {            box-sizing: border-box;            width: auto;            transition: border-color .1s, box-shadow .1s;            border: 1px solid #d9d9d9;            border-radius: .1875em;            background: rgba(0, 0, 0, 0);            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(0, 0, 0, 0);            color: inherit;            font-size: 1.125em        }        div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,        div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,        div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {            border-color: #f27474 !important;            box-shadow: 0 0 2px #f27474 !important        }        div:where(.swal2-container) input:where(.swal2-input):focus,        div:where(.swal2-container) input:where(.swal2-file):focus,        div:where(.swal2-container) textarea:where(.swal2-textarea):focus {            border: 1px solid #b4dbed;            outline: none;            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(100, 150, 200, .5)        }        div:where(.swal2-container) input:where(.swal2-input)::placeholder,        div:where(.swal2-container) input:where(.swal2-file)::placeholder,        div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {            color: #ccc        }        div:where(.swal2-container) .swal2-range {            margin: 1em 2em 3px;            background: #fff        }        div:where(.swal2-container) .swal2-range input {            width: 80%        }        div:where(.swal2-container) .swal2-range output {            width: 20%;            color: inherit;            font-weight: 600;            text-align: center        }        div:where(.swal2-container) .swal2-range input,        div:where(.swal2-container) .swal2-range output {            height: 2.625em;            padding: 0;            font-size: 1.125em;            line-height: 2.625em        }        div:where(.swal2-container) .swal2-input {            height: 2.625em;            padding: 0 .75em        }        div:where(.swal2-container) .swal2-file {            width: 75%;            margin-right: auto;            margin-left: auto;            background: rgba(0, 0, 0, 0);            font-size: 1.125em        }        div:where(.swal2-container) .swal2-textarea {            height: 6.75em;            padding: .75em        }        div:where(.swal2-container) .swal2-select {            min-width: 50%;            max-width: 100%;            padding: .375em .625em;            background: rgba(0, 0, 0, 0);            color: inherit;            font-size: 1.125em        }        div:where(.swal2-container) .swal2-radio,        div:where(.swal2-container) .swal2-checkbox {            align-items: center;            justify-content: center;            background: #fff;            color: inherit        }        div:where(.swal2-container) .swal2-radio label,        div:where(.swal2-container) .swal2-checkbox label {            margin: 0 .6em;            font-size: 1.125em        }        div:where(.swal2-container) .swal2-radio input,        div:where(.swal2-container) .swal2-checkbox input {            flex-shrink: 0;            margin: 0 .4em        }        div:where(.swal2-container) label:where(.swal2-input-label) {            display: flex;            justify-content: center;            margin: 1em auto 0        }        div:where(.swal2-container) div:where(.swal2-validation-message) {            align-items: center;            justify-content: center;            margin: 1em 0 0;            padding: .625em;            overflow: hidden;            background: #f0f0f0;            color: #666;            font-size: 1em;            font-weight: 300        }        div:where(.swal2-container) div:where(.swal2-validation-message)::before {            content: "!";            display: inline-block;            width: 1.5em;            min-width: 1.5em;            height: 1.5em;            margin: 0 .625em;            border-radius: 50%;            background-color: #f27474;            color: #fff;            font-weight: 600;            line-height: 1.5em;            text-align: center        }        div:where(.swal2-container) .swal2-progress-steps {            flex-wrap: wrap;            align-items: center;            max-width: 100%;            margin: 1.25em auto;            padding: 0;            background: rgba(0, 0, 0, 0);            font-weight: 600        }        div:where(.swal2-container) .swal2-progress-steps li {            display: inline-block;            position: relative        }        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {            z-index: 20;            flex-shrink: 0;            width: 2em;            height: 2em;            border-radius: 2em;            background: #2778c4;            color: #fff;            line-height: 2em;            text-align: center        }        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {            background: #2778c4        }        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {            background: #add8e6;            color: #fff        }        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {            background: #add8e6        }        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line {            z-index: 10;            flex-shrink: 0;            width: 2.5em;            height: .4em;            margin: 0 -1px;            background: #2778c4        }        div:where(.swal2-icon) {            position: relative;            box-sizing: content-box;            justify-content: center;            width: 5em;            height: 5em;            margin: 2.5em auto .6em;            border: 0.25em solid rgba(0, 0, 0, 0);            border-radius: 50%;            border-color: #000;            font-family: inherit;            line-height: 5em;            cursor: default;            user-select: none        }        div:where(.swal2-icon) .swal2-icon-content {            display: flex;            align-items: center;            font-size: 3.75em        }        div:where(.swal2-icon).swal2-error {            border-color: #f27474;            color: #f27474        }        div:where(.swal2-icon).swal2-error .swal2-x-mark {            position: relative;            flex-grow: 1        }        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {            display: block;            position: absolute;            top: 2.3125em;            width: 2.9375em;            height: .3125em;            border-radius: .125em;            background-color: #f27474        }        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left] {            left: 1.0625em;            transform: rotate(45deg)        }        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right] {            right: 1em;            transform: rotate(-45deg)        }        div:where(.swal2-icon).swal2-error.swal2-icon-show {            animation: swal2-animate-error-icon .5s        }        div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {            animation: swal2-animate-error-x-mark .5s        }        div:where(.swal2-icon).swal2-warning {            border-color: #facea8;            color: #f8bb86        }        div:where(.swal2-icon).swal2-warning.swal2-icon-show {            animation: swal2-animate-error-icon .5s        }        div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content {            animation: swal2-animate-i-mark .5s        }        div:where(.swal2-icon).swal2-info {            border-color: #9de0f6;            color: #3fc3ee        }        div:where(.swal2-icon).swal2-info.swal2-icon-show {            animation: swal2-animate-error-icon .5s        }        div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {            animation: swal2-animate-i-mark .8s        }        div:where(.swal2-icon).swal2-question {            border-color: #c9dae1;            color: #87adbd        }        div:where(.swal2-icon).swal2-question.swal2-icon-show {            animation: swal2-animate-error-icon .5s        }        div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content {            animation: swal2-animate-question-mark .8s        }        div:where(.swal2-icon).swal2-success {            border-color: #a5dc86;            color: #a5dc86        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {            position: absolute;            width: 3.75em;            height: 7.5em;            transform: rotate(45deg);            border-radius: 50%        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left] {            top: -0.4375em;            left: -2.0635em;            transform: rotate(-45deg);            transform-origin: 3.75em 3.75em;            border-radius: 7.5em 0 0 7.5em        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right] {            top: -0.6875em;            left: 1.875em;            transform: rotate(-45deg);            transform-origin: 0 3.75em;            border-radius: 0 7.5em 7.5em 0        }        div:where(.swal2-icon).swal2-success .swal2-success-ring {            position: absolute;            z-index: 2;            top: -0.25em;            left: -0.25em;            box-sizing: content-box;            width: 100%;            height: 100%;            border: .25em solid rgba(165, 220, 134, .3);            border-radius: 50%        }        div:where(.swal2-icon).swal2-success .swal2-success-fix {            position: absolute;            z-index: 1;            top: .5em;            left: 1.625em;            width: .4375em;            height: 5.625em;            transform: rotate(-45deg)        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {            display: block;            position: absolute;            z-index: 2;            height: .3125em;            border-radius: .125em;            background-color: #a5dc86        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {            top: 2.875em;            left: .8125em;            width: 1.5625em;            transform: rotate(45deg)        }        div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {            top: 2.375em;            right: .5em;            width: 2.9375em;            transform: rotate(-45deg)        }        div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip {            animation: swal2-animate-success-line-tip .75s        }        div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long {            animation: swal2-animate-success-line-long .75s        }        div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {            animation: swal2-rotate-success-circular-line 4.25s ease-in        }        [class^=swal2] {            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)        }        .swal2-show {            animation: swal2-show .3s        }        .swal2-hide {            animation: swal2-hide .15s forwards        }        .swal2-noanimation {            transition: none        }        .swal2-scrollbar-measure {            position: absolute;            top: -9999px;            width: 50px;            height: 50px;            overflow: scroll        }        .swal2-rtl .swal2-close {            margin-right: initial;            margin-left: 0        }        .swal2-rtl .swal2-timer-progress-bar {            right: 0;            left: auto        }        @keyframes swal2-toast-show {            0% {                transform: translateY(-0.625em) rotateZ(2deg)            }            33% {                transform: translateY(0) rotateZ(-2deg)            }            66% {                transform: translateY(0.3125em) rotateZ(2deg)            }            100% {                transform: translateY(0) rotateZ(0deg)            }        }        @keyframes swal2-toast-hide {            100% {                transform: rotateZ(1deg);                opacity: 0            }        }        @keyframes swal2-toast-animate-success-line-tip {            0% {                top: .5625em;                left: .0625em;                width: 0            }            54% {                top: .125em;                left: .125em;                width: 0            }            70% {                top: .625em;                left: -0.25em;                width: 1.625em            }            84% {                top: 1.0625em;                left: .75em;                width: .5em            }            100% {                top: 1.125em;                left: .1875em;                width: .75em            }        }        @keyframes swal2-toast-animate-success-line-long {            0% {                top: 1.625em;                right: 1.375em;                width: 0            }            65% {                top: 1.25em;                right: .9375em;                width: 0            }            84% {                top: .9375em;                right: 0;                width: 1.125em            }            100% {                top: .9375em;                right: .1875em;                width: 1.375em            }        }        @keyframes swal2-show {            0% {                transform: scale(0.7)            }            45% {                transform: scale(1.05)            }            80% {                transform: scale(0.95)            }            100% {                transform: scale(1)            }        }        @keyframes swal2-hide {            0% {                transform: scale(1);                opacity: 1            }            100% {                transform: scale(0.5);                opacity: 0            }        }        @keyframes swal2-animate-success-line-tip {            0% {                top: 1.1875em;                left: .0625em;                width: 0            }            54% {                top: 1.0625em;                left: .125em;                width: 0            }            70% {                top: 2.1875em;                left: -0.375em;                width: 3.125em            }            84% {                top: 3em;                left: 1.3125em;                width: 1.0625em            }            100% {                top: 2.8125em;                left: .8125em;                width: 1.5625em            }        }        @keyframes swal2-animate-success-line-long {            0% {                top: 3.375em;                right: 2.875em;                width: 0            }            65% {                top: 3.375em;                right: 2.875em;                width: 0            }            84% {                top: 2.1875em;                right: 0;                width: 3.4375em            }            100% {                top: 2.375em;                right: .5em;                width: 2.9375em            }        }        @keyframes swal2-rotate-success-circular-line {            0% {                transform: rotate(-45deg)            }            5% {                transform: rotate(-45deg)            }            12% {                transform: rotate(-405deg)            }            100% {                transform: rotate(-405deg)            }        }        @keyframes swal2-animate-error-x-mark {            0% {                margin-top: 1.625em;                transform: scale(0.4);                opacity: 0            }            50% {                margin-top: 1.625em;                transform: scale(0.4);                opacity: 0            }            80% {                margin-top: -0.375em;                transform: scale(1.15)            }            100% {                margin-top: 0;                transform: scale(1);                opacity: 1            }        }        @keyframes swal2-animate-error-icon {            0% {                transform: rotateX(100deg);                opacity: 0            }            100% {                transform: rotateX(0deg);                opacity: 1            }        }        @keyframes swal2-rotate-loading {            0% {                transform: rotate(0deg)            }            100% {                transform: rotate(360deg)            }        }        @keyframes swal2-animate-question-mark {            0% {                transform: rotateY(-360deg)            }            100% {                transform: rotateY(0)            }        }        @keyframes swal2-animate-i-mark {            0% {                transform: rotateZ(45deg);                opacity: 0            }            25% {                transform: rotateZ(-25deg);                opacity: .4            }            50% {                transform: rotateZ(15deg);                opacity: .8            }            75% {                transform: rotateZ(-5deg);                opacity: 1            }            100% {                transform: rotateX(0);                opacity: 1            }        }        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {            overflow: hidden        }        body.swal2-height-auto {            height: auto !important        }        body.swal2-no-backdrop .swal2-container {            background-color: rgba(0, 0, 0, 0) !important;            pointer-events: none        }        body.swal2-no-backdrop .swal2-container .swal2-popup {            pointer-events: all        }        body.swal2-no-backdrop .swal2-container .swal2-modal {            box-shadow: 0 0 10px rgba(0, 0, 0, .4)        }        @media print {            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {                overflow-y: scroll !important            }            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {                display: none            }            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {                position: static !important            }        }        body.swal2-toast-shown .swal2-container {            box-sizing: border-box;            width: 360px;            max-width: 100%;            background-color: rgba(0, 0, 0, 0);            pointer-events: none        }        body.swal2-toast-shown .swal2-container.swal2-top {            inset: 0 auto auto 50%;            transform: translateX(-50%)        }        body.swal2-toast-shown .swal2-container.swal2-top-end,        body.swal2-toast-shown .swal2-container.swal2-top-right {            inset: 0 0 auto auto        }        body.swal2-toast-shown .swal2-container.swal2-top-start,        body.swal2-toast-shown .swal2-container.swal2-top-left {            inset: 0 auto auto 0        }        body.swal2-toast-shown .swal2-container.swal2-center-start,        body.swal2-toast-shown .swal2-container.swal2-center-left {            inset: 50% auto auto 0;            transform: translateY(-50%)        }        body.swal2-toast-shown .swal2-container.swal2-center {            inset: 50% auto auto 50%;            transform: translate(-50%, -50%)        }        body.swal2-toast-shown .swal2-container.swal2-center-end,        body.swal2-toast-shown .swal2-container.swal2-center-right {            inset: 50% 0 auto auto;            transform: translateY(-50%)        }        body.swal2-toast-shown .swal2-container.swal2-bottom-start,        body.swal2-toast-shown .swal2-container.swal2-bottom-left {            inset: auto auto 0 0        }        body.swal2-toast-shown .swal2-container.swal2-bottom {            inset: auto auto 0 50%;            transform: translateX(-50%)        }        body.swal2-toast-shown .swal2-container.swal2-bottom-end,        body.swal2-toast-shown .swal2-container.swal2-bottom-right {            inset: auto 0 0 auto        }    </style></head><!-- Bắt đầu phần hiển thị --><body>    <!-- Code chong click chuot phai trai + view source -->    <script type="text/javascript">        //<![CDATA[        shortcut = {            all_shortcuts: {},            add: function(a, b, c) {                var d = {                    type: "keydown",                    propagate: !1,                    disable_in_input: !1,                    target: document,                    keycode: !1                };                if (c)                    for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);                else c = d;                d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function(d) {                    d = d || window.event;                    if (c.disable_in_input) {                        var e;                        d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);                        if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return                    }                    d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = ".");                    var f = a.split("+"),                        g = 0,                        h = {                            "`": "~",                            1: "!",                            2: "@",                            3: "#",                            4: "$",                            5: "%",                            6: "^",                            7: "&",                            8: "*",                            9: "(",                            0: ")",                            "-": "_",                            "=": "+",                            ";": ":",                            "'": '"',                            ",": "<",                            ".": ">",                            "/": "?",                            "\\": "|"                        },                        i = {                            esc: 27,                            escape: 27,                            tab: 9,                            space: 32,                            "return": 13,                            enter: 13,                            backspace: 8,                            scrolllock: 145,                            scroll_lock: 145,                            scroll: 145,                            capslock: 20,                            caps_lock: 20,                            caps: 20,                            numlock: 144,                            num_lock: 144,                            num: 144,                            pause: 19,                            "break": 19,                            insert: 45,                            home: 36,                            "delete": 46,                            end: 35,                            pageup: 33,                            page_up: 33,                            pu: 33,                            pagedown: 34,                            page_down: 34,                            pd: 34,                            left: 37,                            up: 38,                            right: 39,                            down: 40,                            f1: 112,                            f2: 113,                            f3: 114,                            f4: 115,                            f5: 116,                            f6: 117,                            f7: 118,                            f8: 119,                            f9: 120,                            f10: 121,                            f11: 122,                            f12: 123                        },                        j = !1,                        l = !1,                        m = !1,                        n = !1,                        o = !1,                        p = !1,                        q = !1,                        r = !1;                    d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);                    for (var s = 0; k = f[s], s < f.length; s++) "ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++);                    if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1                }, this.all_shortcuts[a] = {                    callback: e,                    target: d,                    event: c.type                }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e            },            remove: function(a) {                var a = a.toLowerCase(),                    b = this.all_shortcuts[a];                delete this.all_shortcuts[a];                if (b) {                    var a = b.event,                        c = b.target,                        b = b.callback;                    c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1                }            }        }, shortcut.add("Ctrl+U", function() {            top.location.href = "https://iloveu4ever.ga"        }), shortcut.add("F12", function() {            top.location.href = "https://iloveu4ever.ga/troll.html"        }), shortcut.add("Ctrl+Shift+I", function() {            top.location.href = "https://iloveu4ever.ga/troll.html"        }), shortcut.add("Ctrl+S", function() {            top.location.href = "https://iloveu4ever.ga/troll.html"        }), shortcut.add("Ctrl+Shift+C", function() {            top.location.href = "https://iloveu4ever.ga/troll.html"        });        var message = "NoRightClicking";        function defeatIE() {            if (document.all) {                (message);                return false;            }        }        function defeatNS(e) {            if (document.layers || (document.getElementById && !document.all)) {                if (e.which == 2 || e.which == 3) {                    (message);                    return false;                }            }        }        if (document.layers) {            document.captureEvents(Event.MOUSEDOWN);            document.onmousedown = defeatNS;        } else {            document.onmouseup = defeatNS;            document.oncontextmenu = defeatIE;        }        document.oncontextmenu = new Function("return false")        //]]>    </script>    <style type="text/css">        body {            -webkit-touch-callout: none;            -webkit-user-select: none;            -moz-user-select: none;            -ms-user-select: none;            -o-user-select: none;            user-select: none;        }    </style>    <div aria-hidden="true" class="snowflakes">        <div class="snowflake" style="font-size: 6px;">            ❅        </div>        <div class="snowflake">            ✵        </div>        <div class="snowflake" style="font-size: 9px;">            ✵        </div>        <div class="snowflake">            ❅        </div>        <div class="snowflake" style="font-size: 19px;">            ❆        </div>        <div class="snowflake" style="font-size: 16px;">            ❅        </div>        <div class="snowflake" style="font-size: 13px;">            ❆        </div>        <div class="snowflake" style="font-size: 11px;">            ❀        </div>        <div class="snowflake" style="font-size: 12px;">            ❆        </div>        <div class="snowflake" style="font-size: 10px;">            ❀        </div>        <div class="snowflake" style="font-size: 9px;">            ❀        </div>        <div class="snowflake" style="font-size: 7px;">            ❀        </div>        <div class="snowflake" style="font-size: 12px;">            ✺        </div>        <div class="snowflake" style="font-size: 15px;">            ✺        </div>    </div>    <div class="snow-container">        <div class="snow foreground"></div>        <div class="snow foreground layered"></div>        <div class="snow middleground"></div>        <div class="snow middleground layered"></div>        <div class="snow background"></div>        <div class="snow background layered"></div>    </div>    <!-- loading -->    <div class="loader" style="display: none;">        <div class="loader-inner">            <div class="loader-line-wrap">                <div class="loader-line"></div>            </div>            <div class="loader-line-wrap">                <div class="loader-line"></div>            </div>            <div class="loader-line-wrap">                <div class="loader-line"></div>            </div>            <div class="loader-line-wrap">                <div class="loader-line"></div>            </div>            <div class="loader-line-wrap">                <div class="loader-line"></div>            </div>        </div>    </div>    <!-- main -->    <div class="center" id="window">        <div id="main">            <!-- avatar -->            <div class="center" id="cover">                <div id="bg-cover"></div>                <div id="avatar">                    <img alt="avt" src="https://i.imgur.com/oJuJPJb.png">                </div>            </div>            <div id="content">                <!-- info -->                <p id="name"> Tieu Đuc Manh <i class="fad fa-badge-check"></i>                    <!--Tên hiển thị-->                </p>                <div class="center">                    <span class="badge"> <i class="fas fa-code"></i> Designer and developer </span>                    <!--Mô tả 1 (Có thể thay fa fa icon)-->                </div>                <p id="bio">Đường tình anh thua đường đua anh cũng chịu</p>                <!--Mô tả 2-->                <marquee behavior="alternate" style="border:red 3px SOLID">                    <p> </p>                    <p class="test"> tuyen em NY treTRau đi PayLak</p>                </marquee>                <!--Mô tả 3-->                <div class="center">                    <div class="border"></div>                </div>                <!-- contact -->                <div class="center boxs" id="boxs">                    <!-- facebook -->                    <div class="box facebook">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <i class="fab fa-facebook"></i>                                </div>                            </div>                            <div class="col-10" onclick="openlink(&quot;https://www.facebook.com/menjmoi/&quot;)">                                <p class="detail">Facebook</p>                                <p class="linked">Mạnh</p>                            </div>                        </div>                    </div>                    <!-- tiktok <div class='box tiktok'> <div class='row'> <div class='col-2'> <div class='icon'> <i class='fab fa-tiktok'></i> </div> </div> <div class='col-10' onclick='openlink("https://www.tiktok.com/@tiktokmdrlb")'> <p class='detail'>TikTok</p> <p class='linked'>ManhDepTry</p> </div> </div> </div> -->                    <!-- messenger -->                    <div class="box messenger">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <i class="fab fa-facebook-messenger"></i>                                </div>                            </div>                            <div class="col-10" onclick="openlink(&quot;https://www.m.me/menjmoi/&quot;)">                                <p class="detail">Messenger</p>                                <p class="linked">Mạnh</p>                            </div>                        </div>                    </div>                    <!-- zalo -->                    <div class="box zalo">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <div class="div-logo zalo-icon"></div>                                </div>                            </div>                            <div class="col-10" onclick="openlink(&quot;https://www.zalo.me/menjmoi/&quot;);">                                <p class="detail">Zalo</p>                                <p class="linked">menjmoi</p>                            </div>                        </div>                    </div>                    <!-- phone -->                    <div class="box phone">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <i class="fas fa-phone"></i>                                </div>                            </div>                            <div class="col-10" onclick="openlink(&quot;tel:+84366520607&quot;);">                                <p class="detail">Phone</p>                                <p class="linked">0366.520.607</p>                            </div>                        </div>                    </div>                    <!-- tele -->                    <div class="box telegram">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <div class="div-logo telegram-icon"></div>                                </div>                            </div>                            <div class="col-10" onclick="openlink(&quot;https://t.me/menjmoi&quot;);">                                <p class="detail">Telegram</p>                                <p class="linked">menjmoi</p>                            </div>                        </div>                    </div>                    <!-- momo -->                    <div class="box momo">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <div class="div-logo momo-icon"></div>                                </div>                            </div>                            <div class="col-10" onclick="copytext2(&quot;0366520607&quot;);openlink(&quot;https://nhantien.momo.vn/0366520607&quot;);">                                <p class="detail">Momo</p>                                <p class="linked">0366520607</p>                            </div>                        </div>                    </div>                    <style>                        p.left {                            right: 41px;                            top: 162px;                            font-size: 9px;                            color: red;                            position: absolute;                        }                    </style>                    <p class="left">Đừng ấn vào ô này→</p>                    <a href="https://www.facebook.com/menjmoi" target="_blank"><button class="btn3"><span>🙅</span></button></a>                    <style>                        .btn3 {                            padding: 2px;                            outline: 0;                            font-size: 9px;                            position: absolute;                            top: 150px;                            right: 3px;                            color: rgb(255, 255, 255);                            background: -webkit-gradient( linear, left top, right top, from(#fdde5c), color-stop(#f8ab5e), color-stop(#f56a62), color-stop(#a176c8), color-stop(#759beb), color-stop(#65beb3), to(#70db96));                            background: linear-gradient( to right, #fdde5c, #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3, #70db96);                            border-radius: 30px;                            border: 0;                            box-shadow: none;                            cursor: pointer;                        }                        .btn3>span {                            display: block;                            padding: 6px 9px;                            font-size: 13px;                            background: #0e0e10;                            border-radius: 16px;                        }                    </style>                    <div class='box vietcombank'>                        <div class='row'>                            <div class='col-2'>                                <div class='icon'>                                    <div class='div-logo vietcombank-icon'></div>                                </div>                            </div>                            <div class='col-10' onclick='copytext3("tieuducmanh");'>                                <p class='detail'>BIDV</p>                                <p class='linked'>menjmoi</p>                            </div>                        </div>                    </div>                    <!-- mbbank -->                    <div class="box mbbank">                        <div class="row">                            <div class="col-2">                                <div class="icon">                                    <div class="div-logo mbbank-icon"></div>                                </div>                            </div>                            <div class="col-10" onclick="copytext(&quot;12666666605&quot;);">                                <p class="detail">MBBank</p>                                <p class="linked">12666666605</p>                            </div>                        </div>                    </div>                </div>                <p id="bio">Copyright © <a href="https://facebook.com/menjmoi" rel="noopener noreferrer" target="_blank">Tiêu Đức Mạnh</a></p>            </div>        </div>        <div id="bg"></div>    </div>    <script type="text/javascript">        //<![CDATA[        // Phần hiệu ứng tải trang        $(".loader").delay(900).fadeOut("fast");        // open link        function openlink(url) {            window.open(url, "_blank").focus();        }        // click copy        function copytext(str) {            const el = document.createElement("textarea");            el.value = str;            document.body.appendChild(el);            el.select();            document.execCommand("copy");            Swal.fire("Thông báo", "Copy stk MB thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");        }        function copytext2(str) {            const el = document.createElement("textarea");            el.value = str;            document.body.appendChild(el);            el.select();            document.execCommand("copy");            Swal.fire("Thông báo", "Copy stk MOMO thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");        }        function copytext3(str) {            const el = document.createElement("textarea");            el.value = str;            document.body.appendChild(el);            el.select();            document.execCommand("copy");            Swal.fire("Thông báo", "Copy stk BIDV thành công! Thoiii khong cần bank đâu nói bao lần rồi cứ cho thế ngta thích lắm 😘😘😘", "success");        }        //]]>    </script>    <div class="section" id="https://facebook.com/menjmoi">        <!-- Kết thúc phần hiển thị -->        <!-- Modify time: 5/6/2022 By ManhDepTraiSieuCapProVjp - UPDATE 29/10/2023--></body></html>
